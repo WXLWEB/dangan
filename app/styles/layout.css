@@ -1,0 +1,90 @@
+.container {}
+img,object,video,embed {
+max-width: 100%;
+height:auto;
+margin:0 auto;
+}
+
+
+/* Carousel轮播 */
+.myCarousel_w{	border: 1px solid #c7c8c8;}
+.myh1{ line-height: 26px; }
+.myh1 h1{ font-size:1.5em;}
+.item_img{width:30%; margin: auto; padding: 30px 0;}
+.item_img img{max-width: 100%;}
+.carousel_right h2{font-size: 1.5em; color: #222427; line-height: 40px; margin-bottom: 40px;}
+.carousel_y{font-size: 0.875em; color: #535454; line-height: 1.5em; margin-bottom: 40px;}
+.carousel_y span{ width:12.28%; display: inline-block;}
+.carousel_y b{font-size: 1.5em; color: #E62129;} 
+.carousel_btn .btn {border: none;}
+.btn-lg{font-size: 1.125em; border-radius: 0px; padding: 0px; line-height: 40px; width:30%;}
+.car_but{ margin: 0 3%;}
+
+.carousel-control.right {background: none;}
+.carousel-control.left {background: none;}
+.carousel-control img{ position: absolute; top: 45%; left:40%;}
+.carousel-indicators .active{ background-color: #b5874e; border: none;}
+.carousel-indicators li {  border: 1px solid #b5874e;}
+.btn-primary { background-color: #b5874e;}
+.btn-primary:hover {background-color: #b5874e;}
+
+.heat { width: 100%; margin-top: 10px;}
+.tit { position: relative;}
+.tit h2 { font-weight: bold; font-size: 20px; color: #222427; border-bottom: 1px solid #222427; padding-bottom: 9px; display: inline; z-index: 999;}
+.tit span { border:1px solid #dadbdb; position: absolute; width: 100%; height: 1px; top: 30px; left: 0; z-index: 22;}
+.brand { margin-top: 26px;}
+.brand p { padding-bottom: 10px; font-size: 16px; color: #222427;}
+.three { width: 100%;}
+.colo { width: 30%; border-top: 1px solid #c8c8c8; float: left; display: block; margin-right: 30px;}
+.colo ul { margin-top: 20px;}
+.colo ul li { line-height: 24px;}
+
+.introd { width: 100%; }
+.subject { width: 100%; height:44px; background: #802b6f; margin-top: 20px;}
+.subject h3 { color: #FFF; font-weight:900; font-size: 20px; text-indent: 30px; padding:10px 0; float: left;}
+.subject ul { float: right; line-height: 44px;}
+.subject ul li { float: left; color: #FFF; font-size: 16px; font-weight:900; margin-right: 30px;}
+.original { width: 35%; margin-top: 47px; float: left;}
+.tu { float: left; width: 16%; margin-left: 43px;}
+.tu img { width: 100%; height: auto;}
+.pian { float: left; width: 8%; margin-left: 43px;}
+.pian img { width: 100%; height: auto;}
+.genuine { float: left; width: 62%; margin-left: 13px;}
+.genuine h2 { font-weight: bold; color: #383838;}
+.genuine p { line-height: 20px;}
+.overseas { width: 65%; float: left;margin-top: 47px;}
+
+.sub { width: 33%; float: left; margin-top: 47px;}
+.classic { width: 100%; margin-top: 10px;}
+.classic img { width: 100%;}
+
+.menu_list { float: left;}
+
+@media screen and (max-width: 1000px) { 
+  .container { width: 90%;}
+  .colo  { width: 100%;}
+  .original { width:100%;}
+  .tu { margin-left: 0; width: 50px; height: 50px;}
+  .pian { width: 50px; height: 50px; margin-left: 0;}
+  .overseas { width: 100%;}
+  .genuine { width: 67%;}
+  .subject { height: 100px;}
+  .subject ul { line-height: 20px; display: block; clear: both;  float: left;}
+  .subject ul li { clear: both;}
+  .sub { width: 100%;}
+  .subject h3  { text-indent: 0;}
+  .col-xs-6{width:100%;}
+  .carousel_right h2{ font-size: 1.875em;}
+  .carousel_y{font-size: 1.5em;}
+  .btn-lg{ width: 100%; font-size: 1.875em; display: block;}
+  .carousel_btn .btn{ margin: 15px 0;}
+    .nav-pills > li + li {
+	margin-left: 1%;
+    }
+ }
+@media screen and (max-width: 900px) { 
+  .nav-pills > li + li {
+	margin-left: 0%;
+}
+
+}

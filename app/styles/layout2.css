@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { font-size: 16px;}
+.main { width: 88%; margin: auto;}
+.header { width: 100%;}
+.login { height: 29px; line-height: 30px; font-size: 0.75em; font-weight: 600; color: #05060d; width: 100%; margin: auto; border-bottom: 1px solid #cccccc;}
+.login p { margin: 0; float: left;}
+.login p a { margin: 0 15px 0 35px; font-size: 1em; font-weight: 600; color: #05060d;}
+.login p .fl { margin-left: 15px; float: none;}
+.login ul { float: right;}
+.login ul li { float: left; margin-right: 10px;}
+.login ul li a { margin-left: 10px; color: #000;}
+
+.logo { position: relative; padding-top: 20px; border-bottom: 1px solid #cccccc; height: 99px;}
+.logo p { width: 17%; margin: 0; float: left;}
+.logo p img { width: 100%;}
+.logo .button { cursor: pointer; margin-left: 3.75%; float: left; color: #fff; font-size: 1.25em; width: 14%; padding: 1% 0; border: 1px solid #b5874e; background: #b5874e url(../images/icon.png) no-repeat 85% center;}
+.logo input { cursor: pointer; margin: 0; padding: 1.13% 0; width: 33.7%; border: 2px solid #b5874e; float: left;}
+.logo .search { text-indent: 20%; float: right; padding: 1.1% 0; width: 150px; background: #fff url(../images/icon1.png) 15px center no-repeat; color: #B5874E; font-size: 1.125em; border: 1px solid #b5874e; float: left;}
+.logo button { cursor: pointer; margin-right: 8%; padding: 1% 0; width: 9.4%; background: #B5874E; color: #fff; font-size: 1.25em; border: 1px solid #b5874e; float: left;}
+.logo span { display: none; float: right; width: 10%;}
+.logo span img { width: 100%;}
+.logo ul { display: none; z-index: 100; width: 12.5%; position: absolute; left: 24.2%; top: 72%;}
+.logo ul li { color: #b5874e; background: #fff; width: 100%; text-align: center; cursor: pointer; line-height: 40px; border: 1px solid #b5874e; border-bottom: none;}
+
+.nav { position: relative; border-bottom: 1px solid #c39d6f;}
+.nav dl { position: relative; float: left; width: 100%; margin-bottom: 0;}
+.nav dl dt { position: absolute; bottom: 0; margin-top: 0.3%; cursor: pointer; margin-right: 3%; float: left; width: 20%;}
+.nav dl dt img { margin-top: 2.8%; width: 100%;}
+.nav dl dd {bottom: 0; border-top-right-radius: 15%; border-top-left-radius: 15%; border: 1px solid #b5874e; cursor: pointer; text-align: center; color: #b5874e; margin-right: 1%; margin-top: 2%; float: left; padding: 1.5% 0; border-bottom: none;  width: 7.45%;}
+.nav dl dd:hover { color: #fff; background: #b5874e;}
+.nav dl .fl { margin-left: 23%;}
+.nav dl .fk,.nav dl .fy { display: none;}
+.ul { position: absolute; width: 100%;}
+.ul ul { border-bottom: 1px solid #b5874e; z-index: 3000; display: none; top: 100%; width: 100%;}
+.ul ul li { color: #b5874e; cursor: pointer; text-align: center; width: 50%; line-height: 60px; float: left;}
+.ul ul li:hover { color: #fff; background: #b5874e;}
+
+.con h2 { width: 100%; margin-top: 30px; padding-bottom: 25px; font-size: 14px; color: #000; font-weight: 600; border-bottom: 1px solid #cfcfcf;}
+.con h2 i { float: left; padding-bottom: 10px; border-bottom: 1px solid #000;}
+.con h2 a { float: right; font-size: 12px; color: #000;}
+.menu { width: 30.33%; float: left; margin-right: 3%;}
+.menu p{ width: 100%; margin-top: 30px; padding-bottom: 34px; font-size: 24px; color: #000; font-weight: 600; border-bottom: 1px solid #cfcfcf;}
+.menu p i { float: left; border-bottom: 1px solid #000; padding-bottom:10px}
+.menu b { margin-bottom: 5px; float: left; display: block; width: 100%; color: #c9161d;}
+.menu b span { color: #575859; font-size: 12px; font-weight: normal;}
+.menu b a { color: #c9161d;}
+.menu input { margin: 0;}
+.menu label { margin: 1px 22% 0 1%;}
+.menu em label { margin-right: 0;}
+.progress { float: left; width: 100%;}
+.progress-bar.progress-bar-success { background: #e60013;}
+#progress { height: 10px;}
+.sr-only { float: left; display: block;}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) { 
+.logo button { margin-right: 6.5%;}
+.logo .search { font-size: 14px;}
+}
+@media screen and (max-width: 1100px) {
+.logo button { margin-right: 5.5%;}	 
+.logo { height: 89px;}
+.logo input { width: 29%;}	
+.logo .search { font-size: 12px;}
+.menu label { margin: 1px 15% 0 1%;}
+}
+@media screen and (max-width: 900px) { 
+.logo button { margin-right: 4%;}
+.nav dl dt { margin-top: 1.2%;}
+.menu label { margin: 1px 10% 0 1%;}
+}
+@media screen and (max-width: 770px) { 
+.menu { width: 95%;}	
+.login { display: none;}
+.main { width: 94%;}
+form { width: 100%; float: left; margin-top: 15px; display: none;}
+.logo .button { margin-left: 0; width: 140px;}
+.logo button { margin: 0;}
+.logo span { display: block;}
+.logo input { width: 67%;}
+.logo p { width: 35%; margin-bottom: 20px;}
+.nav {}
+.nav dl dd { display: none;}
+.nav dl .fk { display: block; margin-left: 30%; width: 15%; background: #b5874e; color: #fff;;}
+.nav dl .fy { position: absolute; bottom: 0; right: 0; padding: 3.2% 0; color: #fff; background: url(../images/sanj.png) no-repeat center; display: block; float: right; width: 15%;}
+.nav dl .fy:hover { background: url(../images/sanj.png) no-repeat center;}
+}
+@media screen and (max-width: 640px) { 
+.logo input { width: 57%;}
+}
+@media screen and (max-width: 465px) { 
+.logo { height: 65px;}
+}
+
