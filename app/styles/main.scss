@@ -277,9 +277,8 @@ i,span{font-style: normal}
   .bao{position: absolute;z-index: 10;bottom: 0;right: 15px;}
 }
 .table-bordered{border: none;}
-.brand-img{float: left;}
-.company-info{width: 70%;float: left;padding: 0.5em;
-  .ChinaName{font-size: 1.5em;color: $deepblack;}
+.company-info{padding: 0.5em;
+  .ChinaName{font-size: 2em;color: $deepblack;}
   .EnglishName{font-size: 1.2em;color: $lightblack;}
 }
 #hidden-more-nav{position:absolute;display: none;padding-right: 15px;
@@ -306,7 +305,7 @@ i,span{font-style: normal}
 .SecondNav{border-top: 4px solid $themeColor;
   #moreNav{position: relative;bottom: 0;border: 1px solid $themeColor; padding: 0.5em 1em;
     margin-left: 2%;vertical-align: bottom;margin-top: 1.2em;font-size: 1.2em;}
-    #myTab{font-size: 1.2em;height: 2.5em;display: inline-block;
+    #myTab{font-size: 1.2em;height: 2.3em;display: inline-block;
       float: left;
       word-wrap:break-word;
       overflow:hidden;
@@ -385,16 +384,6 @@ video{
   .video-intro{@extend .cont;}
 }
 
-.share{
-  .bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more{
-    margin:0;
-    background: none!important;
-    padding-left: 0;
-  }
-  .collectFile{
-
-  }
-}
 .olList{list-style: inside;
   li{
     margin-top:0.5em;
@@ -434,9 +423,8 @@ input[type="radio"] {
 .icon-phone:before { content: "\e601"; }
 .IconPhone{font-size: 0.8em;color: $lightblack;border: 1px solid $lightblack;border-radius: 1em;padding: 0.2em;}
 .Iconbrowser{font-size:1em;color: $lightblack;}
-.shareIcon{font-size: 1.2em;color: $themeColor;border: 1px solid $themeColor;padding: 0.2em;border-radius: 1em;}
-.bdsharebuttonbox{display: inline;
-}
+.shareIcon{font-size: 1.2em;color: $themeColor;border: 1px solid $themeColor;padding: 1em;border-radius: 3em;line-height: 1.2em;}
+.bdsharebuttonbox{display: inline;  }
 .IconPosition{color: $themeColor;font-size: 1.2em;}
 .collectIcon{
   font-size: 1.2em;color: $themeColor;border: 1px solid $themeColor;padding: 0.2em;border-radius: 1em;
@@ -891,25 +879,66 @@ input[type="radio"] {
   strong{color: $themeColor;}
 }
 #qrcode{position: absolute;z-index: 1001;top:2em;right: 14em;display: none;}
-#report{
-  .title{font-size: 1.2em;border-bottom: 4px solid $lightblack;padding-bottom: 0.3em;display: inline-block;}
-  .det-text{font-size: 1.2em;color: $lightblack;margin-left: 2em;}
-  .borderTR{
+#report {
+  .title {
+    font-size: 1.2em;
+    border-bottom: 4px solid $lightblack;
+    padding-bottom: 0.3em;
+    display: inline-block;
+  }
+  .ana{
+    border-bottom: 1px solid $lightmoreGray;font-size: 1.2em;color: $lightblack;margin-top: 0.5em;
+    &:not(:first-of-type){
+      padding: 0.5em 0;
+    }
+  }
+  .det-text {
+    font-size: 1.2em;
+    color: $lightblack;
+    margin-left: 2em;
+  }
+  .borderTR {
     border-top: 1px solid $lightmoreGray;
     border-right: 1px solid $lightmoreGray;
   }
-  .borderR{
+  .borderR {
     border-right: 1px solid $lightmoreGray;
   }
-  .borderXR{
+  .borderXR {
     @media (max-width: 767px) {
       border-right: 1px solid $lightmoreGray;
     }
   }
-  .row{padding: 0;margin-left: 0;margin-right: 0;}
-  .row>.col-xs-12,.col-sm-6{
+  .borderL{border-left: 1px solid $lightmoreGray}
+  .borderB{border-bottom: 1px solid $lightmoreGray}
+  .deleteSL{
+    @media (min-width: 768px) {
+      border-left: 0!important;
+    }
+  }
+  .deleteL{
+    border-left: 0!important;
+  }
+  .deleteB{
+      border-bottom: 0!important;
+  }
+  .row {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row > .col-xs-12, .col-sm-6 {
     padding: 1em;
     border-bottom: 1px solid $lightmoreGray;
     border-left: 1px solid $lightmoreGray;
   }
 }
+  .cart{width: 60%;margin: 0 auto;}
+  .joinBao{}
+  .baoIcon{
+    display: inline-block;padding: 1em;font-size: 1.2em;font-weight: bold;
+    color: $themeColor;border: 1px solid $themeColor;
+    line-height: 1.2em;border-radius: 3em;
+    width: 3.2em;
+  }
+.bdshare-button-style0-32{a{background: none}}

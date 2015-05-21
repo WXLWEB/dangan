@@ -5713,15 +5713,10 @@ i, span {
 .table-bordered {
   border: none; }
 
-.brand-img {
-  float: left; }
-
 .company-info {
-  width: 70%;
-  float: left;
   padding: 0.5em; }
   .company-info .ChinaName {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #222427; }
   .company-info .EnglishName {
     font-size: 1.2em;
@@ -5765,7 +5760,7 @@ i, span {
     font-size: 1.2em; }
   .SecondNav #myTab {
     font-size: 1.2em;
-    height: 2.5em;
+    height: 2.3em;
     display: inline-block;
     float: left;
     word-wrap: break-word;
@@ -5878,11 +5873,6 @@ i, span {
   top: 28%;
   left: 30%; }
 
-.share .bdshare-button-style0-16 a, .share .bdshare-button-style0-16 .bds_more {
-  margin: 0;
-  background: none !important;
-  padding-left: 0; }
-
 .olList {
   list-style: inside; }
   .olList li {
@@ -5945,8 +5935,9 @@ input[type="radio"] {
   font-size: 1.2em;
   color: #b5874e;
   border: 1px solid #b5874e;
-  padding: 0.2em;
-  border-radius: 1em; }
+  padding: 1em;
+  border-radius: 3em;
+  line-height: 1.2em; }
 
 .bdsharebuttonbox {
   display: inline; }
@@ -6708,6 +6699,13 @@ input[type="radio"] {
   border-bottom: 4px solid #535454;
   padding-bottom: 0.3em;
   display: inline-block; }
+#report .ana {
+  border-bottom: 1px solid #C7C7C7;
+  font-size: 1.2em;
+  color: #535454;
+  margin-top: 0.5em; }
+  #report .ana:not(:first-of-type) {
+    padding: 0.5em 0; }
 #report .det-text {
   font-size: 1.2em;
   color: #535454;
@@ -6720,6 +6718,17 @@ input[type="radio"] {
 @media (max-width: 767px) {
   #report .borderXR {
     border-right: 1px solid #C7C7C7; } }
+#report .borderL {
+  border-left: 1px solid #C7C7C7; }
+#report .borderB {
+  border-bottom: 1px solid #C7C7C7; }
+@media (min-width: 768px) {
+  #report .deleteSL {
+    border-left: 0 !important; } }
+#report .deleteL {
+  border-left: 0 !important; }
+#report .deleteB {
+  border-bottom: 0 !important; }
 #report .row {
   padding: 0;
   margin-left: 0;
@@ -6728,3 +6737,21 @@ input[type="radio"] {
   padding: 1em;
   border-bottom: 1px solid #C7C7C7;
   border-left: 1px solid #C7C7C7; }
+
+.cart {
+  width: 60%;
+  margin: 0 auto; }
+
+.baoIcon {
+  display: inline-block;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #b5874e;
+  border: 1px solid #b5874e;
+  line-height: 1.2em;
+  border-radius: 3em;
+  width: 3.2em; }
+
+.bdshare-button-style0-32 a {
+  background: none; }

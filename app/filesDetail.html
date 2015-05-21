@@ -124,14 +124,21 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 mt1em mb1em">
-        <a href="#filesDetail" class="filesDetail clearfix" role="tab" data-toggle="pill">
-            <span class="brand-img">
-                <img class="img-responsive"  src="images/public/logo2.png" alt=""  style="width: 50px;"/>
-            </span>
+        <a href="#filesDetail" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
+          <img src="images/public/logo2.png" alt=""  style="width: 50px;"/>
             <span class="company-info">
               <span class="ChinaName">阿里巴巴</span>
             </span>
         </a>
+        <a href="" class="joinBao">
+          <span  class="baoIcon">保</span>
+          <span>参加保障</span>
+        </a>
+        <i class="iconfont shareIcon">&#xe604;</i>
+          <div class="bdsharebuttonbox" data-tag="share_1">
+            <a class="bds_more" data-cmd="more"></a>
+          </div>
+
       </div>
     </div>
   </div>
@@ -141,8 +148,8 @@
         <div class="col-xs-12  clearfix">
           <!-- 选项卡组件（菜单项nav-pills）-->
           <ul id="myTab" class="nav text-right" role="tablist">
-            <li><a href="#government" role="tab" data-toggle="pill">官方</a></li>
             <li><a href="#report" role="tab" data-toggle="pill">报告</a></li>
+            <li><a href="#government" role="tab" data-toggle="pill">官方</a></li>
             <li><a href="#product" role="tab" data-toggle="pill">产品</a></li>
             <li><a href="#emtion" role="tab" data-toggle="pill">舆情</a></li>
             <li><a href="#vote" role="tab" data-toggle="pill">投票</a></li>
@@ -151,8 +158,8 @@
             <li><a href="#together" role="tab" data-toggle="pill">聚合</a></li>
             <li><a href="#images" role="tab" data-toggle="pill">图库</a></li>
             <li><a href="#video" role="tab" data-toggle="pill">视频</a></li>
+            <li><a id="moreNav" class="more" href="javascript:void(0)">更多</a></li>
           </ul>
-          <a id="moreNav" class="more floatRight" href="javascript:void(0)">更多</a>
         </div>
       </div>
     </div>
@@ -213,7 +220,6 @@
   <div class="container">
   <!-- 选项卡面板 -->
       <div id="myTabContent" class="tab-content">
-        <!--档案详情-->
         <div class="tab-pane fade" id="filesDetail">
           <div class="row">
             <div class="col-md-9 col-sm-8 mt1em">
@@ -481,6 +487,34 @@
             <div class="col-sm-6 borderR">
               <span class="title">档案总数</span>
               <span class="det-text">40</span>
+            </div>
+          </div>
+          <div class="row borderB borderL borderR">
+            <div class="col-xs-12 deleteL deleteB">
+              <div class="title floatLeft">舆情分析</div>
+            </div>
+            <div class="col-sm-6 deleteB deleteL">
+              <div  class="ana clearfix">
+                <span class="floatLeft">褒义</span>
+                <span class="floatRight">100条</span>
+              </div>
+              <div  class="ana clearfix">
+                <span class="floatLeft">贬义</span>
+                <span class="floatRight">100条</span>
+              </div>
+              <div  class="ana clearfix">
+                <span class="floatLeft">中义</span>
+                <span class="floatRight">100条</span>
+              </div>
+              <div  class="ana clearfix">
+                <span class="floatLeft">总计</span>
+                <span class="floatRight">400条</span>
+              </div>
+            </div>
+            <div class="col-sm-6 deleteSL deleteB deleteL">
+              <div style="width:95% ;margin: 0 auto;">
+                <canvas id="canvas" height="200" width="600"></canvas>
+                </div>
             </div>
           </div>
         </div>
@@ -1566,6 +1600,7 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.fitvids.js"></script>
 <script src="scripts/backTop.js"></script>
+<script src="scripts/Chart.js"></script>
 <script>
   // Basic FitVids Test
 
@@ -1596,7 +1631,40 @@
     })
   })
 </script>
-
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","bdysc","renren","bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","fbook","linkedin","print"],"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 <!-- endbuild -->
+
+<script>
+  window.onload = function() {
+    var ctx = document.getElementById("canvas").getContext("2d");
+    ctx.fillRect(10, 10, 20, 20);
+  };
+  var lineChartData = {
+    labels : ["6月","7月","8月","9月","总量"],
+    datasets : [
+      {
+        label: "My First dataset",
+        fillColor : "rgba(220,220,220,0.2)",
+        strokeColor : "rgba(247,200,56,1)",
+        pointColor : "rgba(247,200,56,1)",
+        pointStrokeColor : "#f7c838",
+        pointHighlightFill : "#fff",
+        pointHighlightStroke : "rgba(247,200,56,1)",
+        data : [1000,1200,1500,1905,4000]
+      }
+
+    ]
+
+  };
+
+  window.onload = function(){
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myLine = new Chart(ctx).Line(lineChartData, {
+      responsive: true
+    });
+  }
+
+
+</script>
 </body>
 </html>
