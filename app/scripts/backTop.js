@@ -1,9 +1,6 @@
 $(function(){
 	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\">" +
 
-        "<a target='_blank' class=\"btn btn-qrcode\">" +
-        "<div class=\"qrcode\"><img class='img-responsive' src='images/public/qrcode.png'></div>" +
-        "</a>" +
         "<div class=\"btn btn-top\">" +
         "<i class=\"iconfont IconTop\">&#xe600;</i>"+
         "</div>" +
