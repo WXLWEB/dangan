@@ -269,9 +269,7 @@ i,span{font-style: normal}
   }
   .fileText{padding-top:2em;color: $gray;font-size: 1em;
     word-break:break-all;
-    @media (min-width: 768px) {
-      height:11em;
-    };
+      height:8em;
   }
   .circleText{color: $themeColor;font-size: 1.2em;}
   .topWord{padding:1em;position: absolute;z-index: 10;width: 90%;max-width: 90%;text-align: center;
@@ -279,7 +277,7 @@ i,span{font-style: normal}
   .bao{position: absolute;z-index: 10;bottom: 0;right: 15px;}
 }
 .table-bordered{border: none;}
-.brand-img{width: 30%;float: left;}
+.brand-img{float: left;}
 .company-info{width: 70%;float: left;padding: 0.5em;
   .ChinaName{font-size: 1.5em;color: $deepblack;}
   .EnglishName{font-size: 1.2em;color: $lightblack;}
@@ -305,20 +303,27 @@ i,span{font-style: normal}
   .brand-img{width: 20%;}
   .company-info{width: 80%;}
 }
-.SecondNav{border-bottom: 1px solid $themeColor;
+.SecondNav{border-top: 4px solid $themeColor;
   #moreNav{position: relative;bottom: 0;border: 1px solid $themeColor; padding: 0.5em 1em;
     margin-left: 2%;vertical-align: bottom;margin-top: 1.2em;font-size: 1.2em;}
-  @media (min-width: $screen-sm) {
-    padding-top: 1em;
-  }
-    #myTab{margin-top: 1.1em;font-size: 1.2em;height: 2.5em;display: inline-block;
-      float: right;
+    #myTab{font-size: 1.2em;height: 2.5em;display: inline-block;
+      float: left;
       word-wrap:break-word;
       overflow:hidden;
-      li{position: relative;bottom:-4px;display: inline-block;
+      li{display: inline-block;
+        float: left;
+        &:not(:first-of-type){
+          margin-left: 1em;
+        }
       }
       li>a{padding: 0.5em 1em;vertical-align: bottom;
         position: relative;bottom:0;
+        color: $themeColor;
+        border-left: 1px solid $themeColor;
+        border-right: 1px solid $themeColor;
+        border-bottom: 1px solid $themeColor;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
       }
     }
   .table > tbody > tr > td{padding: 0;}
@@ -885,4 +890,26 @@ input[type="radio"] {
   background-color:$white;
   strong{color: $themeColor;}
 }
-#qrcode{position: absolute;z-index: 1001;top:2em;right: 14em;}
+#qrcode{position: absolute;z-index: 1001;top:2em;right: 14em;display: none;}
+#report{
+  .title{font-size: 1.2em;border-bottom: 4px solid $lightblack;padding-bottom: 0.3em;display: inline-block;}
+  .det-text{font-size: 1.2em;color: $lightblack;margin-left: 2em;}
+  .borderTR{
+    border-top: 1px solid $lightmoreGray;
+    border-right: 1px solid $lightmoreGray;
+  }
+  .borderR{
+    border-right: 1px solid $lightmoreGray;
+  }
+  .borderXR{
+    @media (max-width: 767px) {
+      border-right: 1px solid $lightmoreGray;
+    }
+  }
+  .row{padding: 0;margin-left: 0;margin-right: 0;}
+  .row>.col-xs-12,.col-sm-6{
+    padding: 1em;
+    border-bottom: 1px solid $lightmoreGray;
+    border-left: 1px solid $lightmoreGray;
+  }
+}

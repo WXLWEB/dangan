@@ -5688,10 +5688,8 @@ i, span {
     padding-top: 2em;
     color: #818080;
     font-size: 1em;
-    word-break: break-all; }
-    @media (min-width: 768px) {
-      .fileBox .fileText {
-        height: 11em; } }
+    word-break: break-all;
+    height: 8em; }
   .fileBox .circleText {
     color: #b5874e;
     font-size: 1.2em; }
@@ -5716,7 +5714,6 @@ i, span {
   border: none; }
 
 .brand-img {
-  width: 30%;
   float: left; }
 
 .company-info {
@@ -5756,7 +5753,7 @@ i, span {
   width: 80%; }
 
 .SecondNav {
-  border-bottom: 1px solid #b5874e; }
+  border-top: 4px solid #b5874e; }
   .SecondNav #moreNav {
     position: relative;
     bottom: 0;
@@ -5766,26 +5763,29 @@ i, span {
     vertical-align: bottom;
     margin-top: 1.2em;
     font-size: 1.2em; }
-  @media (min-width: 768px) {
-    .SecondNav {
-      padding-top: 1em; } }
   .SecondNav #myTab {
-    margin-top: 1.1em;
     font-size: 1.2em;
     height: 2.5em;
     display: inline-block;
-    float: right;
+    float: left;
     word-wrap: break-word;
     overflow: hidden; }
     .SecondNav #myTab li {
-      position: relative;
-      bottom: -4px;
-      display: inline-block; }
+      display: inline-block;
+      float: left; }
+      .SecondNav #myTab li:not(:first-of-type) {
+        margin-left: 1em; }
     .SecondNav #myTab li > a {
       padding: 0.5em 1em;
       vertical-align: bottom;
       position: relative;
-      bottom: 0; }
+      bottom: 0;
+      color: #b5874e;
+      border-left: 1px solid #b5874e;
+      border-right: 1px solid #b5874e;
+      border-bottom: 1px solid #b5874e;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
   .SecondNav .table > tbody > tr > td {
     padding: 0; }
   .SecondNav .companyName {
@@ -6700,4 +6700,31 @@ input[type="radio"] {
   position: absolute;
   z-index: 1001;
   top: 2em;
-  right: 14em; }
+  right: 14em;
+  display: none; }
+
+#report .title {
+  font-size: 1.2em;
+  border-bottom: 4px solid #535454;
+  padding-bottom: 0.3em;
+  display: inline-block; }
+#report .det-text {
+  font-size: 1.2em;
+  color: #535454;
+  margin-left: 2em; }
+#report .borderTR {
+  border-top: 1px solid #C7C7C7;
+  border-right: 1px solid #C7C7C7; }
+#report .borderR {
+  border-right: 1px solid #C7C7C7; }
+@media (max-width: 767px) {
+  #report .borderXR {
+    border-right: 1px solid #C7C7C7; } }
+#report .row {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0; }
+#report .row > .col-xs-12, #report .col-sm-6 {
+  padding: 1em;
+  border-bottom: 1px solid #C7C7C7;
+  border-left: 1px solid #C7C7C7; }

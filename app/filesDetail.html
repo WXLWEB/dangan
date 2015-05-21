@@ -41,7 +41,7 @@
           <div class="col-xs-8 text-right">
             <a href="">手机App</a>
             ｜
-            <a href="#qrcode" >微信公众号<img id="qrcode"  src="images/public/qrcode.png"></a>
+            <a href="#qrcode">微信公众号<img id="qrcode" src="images/public/qrcode.png"></a>
             ｜
             <a href="">加入收藏</a>
             ｜
@@ -53,13 +53,16 @@
       </div>
     </div>
   </div>
-</div>
-<div class="content">
-  <div class="SecondNav">
+  <nav class="navbar secondNavphone navbar-default visible-xs">
     <div class="container">
-      <div class="row hidden-xs">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href="#filesDetail" class="filesDetail clearfix" role="tab" data-toggle="pill">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#filesDetail" class="navbar-brand filesDetail clearfix" role="tab" data-toggle="pill">
             <span class="brand-img">
                 <img class="img-responsive"  src="images/public/logo2.png" alt=""  style="width: 50px;"/>
             </span>
@@ -67,13 +70,79 @@
               <span class="ChinaName">阿里巴巴</span>
               <span class="EnglishName">alibaba</span>
             </span>
-          </a>
-        </div>
-        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-8  clearfix">
-          <a id="moreNav" class="more floatRight" href="javascript:void(0)">更多</a>
+        </a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <table class="table table-bordered">
+        <tbody>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#government" role="tab" data-toggle="pill">官方</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#product" role="tab" data-toggle="pill">产品</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#emtion" role="tab" data-toggle="pill">舆情</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#vote" role="tab" data-toggle="pill">投票</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#together" role="tab" data-toggle="pill">聚合</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#quality" role="tab" data-toggle="pill">资质</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#comment" role="tab" data-toggle="pill">评论</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#images" role="tab" data-toggle="pill">图库</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#video" role="tab" data-toggle="pill">视频</a>
+          </td>
+          <td class="col-xs-6 text-center">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 mt1em mb1em">
+        <a href="#filesDetail" class="filesDetail clearfix" role="tab" data-toggle="pill">
+            <span class="brand-img">
+                <img class="img-responsive"  src="images/public/logo2.png" alt=""  style="width: 50px;"/>
+            </span>
+            <span class="company-info">
+              <span class="ChinaName">阿里巴巴</span>
+            </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="SecondNav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  clearfix">
           <!-- 选项卡组件（菜单项nav-pills）-->
-          <ul id="myTab" class="nav text-right nav-pills" role="tablist">
+          <ul id="myTab" class="nav text-right" role="tablist">
             <li><a href="#government" role="tab" data-toggle="pill">官方</a></li>
+            <li><a href="#report" role="tab" data-toggle="pill">报告</a></li>
             <li><a href="#product" role="tab" data-toggle="pill">产品</a></li>
             <li><a href="#emtion" role="tab" data-toggle="pill">舆情</a></li>
             <li><a href="#vote" role="tab" data-toggle="pill">投票</a></li>
@@ -83,76 +152,10 @@
             <li><a href="#images" role="tab" data-toggle="pill">图库</a></li>
             <li><a href="#video" role="tab" data-toggle="pill">视频</a></li>
           </ul>
-
+          <a id="moreNav" class="more floatRight" href="javascript:void(0)">更多</a>
         </div>
       </div>
     </div>
-    <nav class="navbar secondNavphone navbar-default visible-xs">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#filesDetail" class="navbar-brand filesDetail clearfix" role="tab" data-toggle="pill">
-            <span class="brand-img">
-                <img class="img-responsive"  src="images/public/logo2.png" alt=""  style="width: 50px;"/>
-            </span>
-            <span class="company-info">
-              <span class="ChinaName">阿里巴巴</span>
-              <span class="EnglishName">alibaba</span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-          <table class="table table-bordered">
-            <tbody>
-            <tr class="row">
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#government" role="tab" data-toggle="pill">官方</a>
-              </td>
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#product" role="tab" data-toggle="pill">产品</a>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#emtion" role="tab" data-toggle="pill">舆情</a>
-              </td>
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#vote" role="tab" data-toggle="pill">投票</a>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#together" role="tab" data-toggle="pill">聚合</a>
-              </td>
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#quality" role="tab" data-toggle="pill">资质</a>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#comment" role="tab" data-toggle="pill">评论</a>
-              </td>
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#images" role="tab" data-toggle="pill">图库</a>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-xs-6 text-center">
-                <a class="secondNavphoneLink" href="#video" role="tab" data-toggle="pill">视频</a>
-              </td>
-              <td class="col-xs-6 text-center">
-              </td>
-            </tr>
-            </tbody>
-          </table>
-      </div><!-- /.navbar-collapse -->
-    </nav>
   </div>
   <div class="container">
     <div class="row">
@@ -211,7 +214,7 @@
   <!-- 选项卡面板 -->
       <div id="myTabContent" class="tab-content">
         <!--档案详情-->
-        <div class="tab-pane fade in active" id="filesDetail">
+        <div class="tab-pane fade" id="filesDetail">
           <div class="row">
             <div class="col-md-9 col-sm-8 mt1em">
               <div class="banner">
@@ -449,6 +452,35 @@
                 <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
                 <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
               </ol>
+            </div>
+          </div>
+        </div>
+        <!--报告内容-->
+        <div class="tab-pane fade in active" id="report">
+         <div class="row mt1em">
+           <div class="col-xs-12 borderTR">
+              <span class="title">档案全称</span>
+              <span class="det-text">北京诚盾诚讯信息技术有限公司</span>
+           </div>
+         </div>
+          <div class="row">
+            <div class="col-sm-6 borderXR">
+              <span class="title">所处行业</span>
+              <span class="det-text">互联网</span>
+            </div>
+            <div class="col-sm-6 borderR">
+              <span class="title">档案性质</span>
+              <span class="det-text">机构</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 borderXR">
+              <span class="title">档案状态</span>
+              <span class="det-text">已认证</span>
+            </div>
+            <div class="col-sm-6 borderR">
+              <span class="title">档案总数</span>
+              <span class="det-text">40</span>
             </div>
           </div>
         </div>
