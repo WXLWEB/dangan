@@ -30,13 +30,15 @@ $(window).resize(function(){
 $('#SecondNav a').click(function(){
   $('navbar-collapse').removeClass('in');
 });
-console.log($('#myTab li:last-child'));
+console.log($('#myTab li:hidden').html());
 $('#moreNav').on({
   click:function(){
     $('#hidden-more-nav').toggle();
   }
 });
+
 $('#qrcode').hover(function(){
   $('#qrcode :target').toggle();
 });
+console.log($('#myTab li:hidden').html());
 

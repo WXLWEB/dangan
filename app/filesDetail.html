@@ -63,12 +63,9 @@
           <span class="icon-bar"></span>
         </button>
         <a href="#filesDetail" class="navbar-brand filesDetail clearfix" role="tab" data-toggle="pill">
-            <span class="brand-img">
-                <img class="img-responsive"  src="images/public/logo2.png" alt=""  style="width: 50px;"/>
-            </span>
+          <img src="images/public/logo2.png" alt=""  style="width: 50px;"/>
             <span class="company-info">
               <span class="ChinaName">阿里巴巴</span>
-              <span class="EnglishName">alibaba</span>
             </span>
         </a>
       </div>
@@ -78,10 +75,12 @@
         <tbody>
         <tr class="row">
           <td class="col-xs-6 text-center">
-            <a class="secondNavphoneLink" href="#government" role="tab" data-toggle="pill">官方</a>
+            <a href="#">登录</a>
+            ｜
+            <a href="#">注册</a>
           </td>
           <td class="col-xs-6 text-center">
-            <a class="secondNavphoneLink" href="#product" role="tab" data-toggle="pill">产品</a>
+            <a class="secondNavphoneLink"  href=""><img src="images/public/openFiles.gif" alt=""/>我要开通档案</a>
           </td>
         </tr>
         <tr class="row">
@@ -121,7 +120,7 @@
   </nav>
 </div>
 <div class="content">
-  <div class="container">
+  <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-12 mt1em mb1em">
         <a href="#filesDetail" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
@@ -130,15 +129,10 @@
               <span class="ChinaName">阿里巴巴</span>
             </span>
         </a>
-        <a href="" class="joinBao">
+        <a href="" class="joinBao floatRight">
           <span  class="baoIcon">保</span>
           <span>参加保障</span>
         </a>
-        <i class="iconfont shareIcon">&#xe604;</i>
-          <div class="bdsharebuttonbox" data-tag="share_1">
-            <a class="bds_more" data-cmd="more"></a>
-          </div>
-
       </div>
     </div>
   </div>
@@ -148,7 +142,7 @@
         <div class="col-xs-12  clearfix">
           <!-- 选项卡组件（菜单项nav-pills）-->
           <ul id="myTab" class="nav text-right" role="tablist">
-            <li><a href="#report" role="tab" data-toggle="pill">报告</a></li>
+            <li class="active"><a href="#report" role="tab" data-toggle="pill">报告</a></li>
             <li><a href="#government" role="tab" data-toggle="pill">官方</a></li>
             <li><a href="#product" role="tab" data-toggle="pill">产品</a></li>
             <li><a href="#emtion" role="tab" data-toggle="pill">舆情</a></li>
@@ -158,7 +152,7 @@
             <li><a href="#together" role="tab" data-toggle="pill">聚合</a></li>
             <li><a href="#images" role="tab" data-toggle="pill">图库</a></li>
             <li><a href="#video" role="tab" data-toggle="pill">视频</a></li>
-            <li><a id="moreNav" class="more" href="javascript:void(0)">更多</a></li>
+            <li><a id="moreNav" class="more" href="javascript:void(0)">+</a></li>
           </ul>
         </div>
       </div>
@@ -212,7 +206,6 @@
             </tbody>
           </table>
         </div><!-- /.navbar-collapse -->
-
       </div>
     </div>
 

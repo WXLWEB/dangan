@@ -5716,7 +5716,8 @@ i, span {
 .company-info {
   padding: 0.5em; }
   .company-info .ChinaName {
-    font-size: 2em;
+    font-size: 1.6em;
+    font-weight: 500;
     color: #222427; }
   .company-info .EnglishName {
     font-size: 1.2em;
@@ -5742,6 +5743,8 @@ i, span {
     background-color: #b5874e;
     color: #fff; }
 
+.secondNavphone .table > tbody > tr > td {
+  padding: 0; }
 .secondNavphone .brand-img {
   width: 20%; }
 .secondNavphone .company-info {
@@ -5751,7 +5754,7 @@ i, span {
   border-top: 4px solid #b5874e; }
   .SecondNav #myTab {
     font-size: 1.2em;
-    height: 2.3em;
+    height: 2.28em;
     display: inline-block;
     float: left;
     word-wrap: break-word;
@@ -5761,6 +5764,9 @@ i, span {
       float: left; }
       .SecondNav #myTab li:not(:first-of-type) {
         margin-left: 1em; }
+    .SecondNav #myTab li.active a {
+      color: #fff;
+      background-color: #b5874e; }
     .SecondNav #myTab li > a {
       padding: 0.5em 1em;
       vertical-align: bottom;

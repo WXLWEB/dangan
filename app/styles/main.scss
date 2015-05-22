@@ -278,7 +278,7 @@ i,span{font-style: normal}
 }
 .table-bordered{border: none;}
 .company-info{padding: 0.5em;
-  .ChinaName{font-size: 2em;color: $deepblack;}
+  .ChinaName{font-size: 1.6em;font-weight:500;color: $deepblack;}
   .EnglishName{font-size: 1.2em;color: $lightblack;}
 }
 #hidden-more-nav{position:absolute;display: none;padding-right: 15px;
@@ -299,12 +299,13 @@ i,span{font-style: normal}
   }
 }
 .secondNavphone{
+  .table > tbody > tr > td{padding: 0;}
   .brand-img{width: 20%;}
   .company-info{width: 80%;}
 }
 .SecondNav{border-top: 4px solid $themeColor;
 
-    #myTab{font-size: 1.2em;height: 2.3em;display: inline-block;
+    #myTab{font-size: 1.2em;height: 2.28em;display: inline-block;
       float: left;
       word-wrap:break-word;
       overflow:hidden;
@@ -314,6 +315,7 @@ i,span{font-style: normal}
           margin-left: 1em;
         }
       }
+      li.active{a{color: $white;background-color: $themeColor;}}
       li>a{padding: 0.5em 1em;vertical-align: bottom;
         position: relative;bottom:0;
         color: $themeColor;
