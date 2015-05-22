@@ -5749,15 +5749,6 @@ i, span {
 
 .SecondNav {
   border-top: 4px solid #b5874e; }
-  .SecondNav #moreNav {
-    position: relative;
-    bottom: 0;
-    border: 1px solid #b5874e;
-    padding: 0.5em 1em;
-    margin-left: 2%;
-    vertical-align: bottom;
-    margin-top: 1.2em;
-    font-size: 1.2em; }
   .SecondNav #myTab {
     font-size: 1.2em;
     height: 2.3em;
@@ -6710,33 +6701,26 @@ input[type="radio"] {
   font-size: 1.2em;
   color: #535454;
   margin-left: 2em; }
-#report .borderTR {
-  border-top: 1px solid #C7C7C7;
-  border-right: 1px solid #C7C7C7; }
 #report .borderR {
   border-right: 1px solid #C7C7C7; }
-@media (max-width: 767px) {
-  #report .borderXR {
+@media (min-width: 767px) {
+  #report .borderSR {
     border-right: 1px solid #C7C7C7; } }
+#report .borderT {
+  border-top: 1px solid #C7C7C7; }
 #report .borderL {
   border-left: 1px solid #C7C7C7; }
 #report .borderB {
   border-bottom: 1px solid #C7C7C7; }
-@media (min-width: 768px) {
-  #report .deleteSL {
-    border-left: 0 !important; } }
-#report .deleteL {
-  border-left: 0 !important; }
-#report .deleteB {
-  border-bottom: 0 !important; }
 #report .row {
   padding: 0;
   margin-left: 0;
-  margin-right: 0; }
-#report .row > .col-xs-12, #report .col-sm-6 {
-  padding: 1em;
+  margin-right: 0;
   border-bottom: 1px solid #C7C7C7;
-  border-left: 1px solid #C7C7C7; }
+  border-left: 1px solid #C7C7C7;
+  border-right: 1px solid #C7C7C7; }
+#report .row > .col-xs-12, #report .col-sm-6 {
+  padding: 1em; }
 
 .cart {
   width: 60%;

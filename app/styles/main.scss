@@ -303,8 +303,7 @@ i,span{font-style: normal}
   .company-info{width: 80%;}
 }
 .SecondNav{border-top: 4px solid $themeColor;
-  #moreNav{position: relative;bottom: 0;border: 1px solid $themeColor; padding: 0.5em 1em;
-    margin-left: 2%;vertical-align: bottom;margin-top: 1.2em;font-size: 1.2em;}
+
     #myTab{font-size: 1.2em;height: 2.3em;display: inline-block;
       float: left;
       word-wrap:break-word;
@@ -897,40 +896,27 @@ input[type="radio"] {
     color: $lightblack;
     margin-left: 2em;
   }
-  .borderTR {
-    border-top: 1px solid $lightmoreGray;
+  .borderR{
     border-right: 1px solid $lightmoreGray;
   }
-  .borderR {
-    border-right: 1px solid $lightmoreGray;
-  }
-  .borderXR {
-    @media (max-width: 767px) {
+  .borderSR {
+    @media (min-width: 767px) {
       border-right: 1px solid $lightmoreGray;
     }
   }
+  .borderT{border-top: 1px solid $lightmoreGray}
   .borderL{border-left: 1px solid $lightmoreGray}
   .borderB{border-bottom: 1px solid $lightmoreGray}
-  .deleteSL{
-    @media (min-width: 768px) {
-      border-left: 0!important;
-    }
-  }
-  .deleteL{
-    border-left: 0!important;
-  }
-  .deleteB{
-      border-bottom: 0!important;
-  }
   .row {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+    border-bottom: 1px solid $lightmoreGray;
+    border-left: 1px solid $lightmoreGray;
+    border-right: 1px solid $lightmoreGray;
   }
   .row > .col-xs-12, .col-sm-6 {
     padding: 1em;
-    border-bottom: 1px solid $lightmoreGray;
-    border-left: 1px solid $lightmoreGray;
   }
 }
   .cart{width: 60%;margin: 0 auto;}
