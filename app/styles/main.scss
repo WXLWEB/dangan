@@ -408,6 +408,7 @@ i,span{font-style: normal}
 
 //圆形进度条
 .circleText{position: absolute;z-index: 10;top:28%;left: 30%;}
+.circleText1{position: absolute;z-index: 10;top:28%;left: 44%;}
 
 //视频
 video{
@@ -453,6 +454,7 @@ input[type="radio"] {
 .icon-phone:before { content: "\e601"; }
 .IconPhone{font-size: 0.8em;color: $lightblack;border: 1px solid $lightblack;border-radius: 1em;padding: 0.2em;}
 .Iconbrowser{font-size:1em;color: $lightblack;}
+.Iconbrowser1{font-size:12px;color: $themeColor;}
 .shareIcon{font-size: 1.2em;color: $themeColor;border: 1px solid $themeColor;padding: 1em;border-radius: 3em;line-height: 1.2em;}
 .bdsharebuttonbox{display: inline;  }
 .IconPosition{color: $themeColor;font-size: 1.2em;}
@@ -924,6 +926,8 @@ input[type="radio"] {
       padding: 0.5em 0;
     }
   }
+  .ana span{font-size: 14px;}
+
   .det-text {
     font-size: 1.2em;
     color: $lightblack;
@@ -935,6 +939,11 @@ input[type="radio"] {
   .borderSR {
     @media (min-width: 768px) {
       border-right: 1px solid $lightmoreGray;
+    }
+  }
+  .borderSL {
+    @media (min-width: 768px) {
+      border-left: 1px solid $lightmoreGray;
     }
   }
   .borderXB{
