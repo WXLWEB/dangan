@@ -908,7 +908,8 @@ input[type="radio"] {
   background-color:$white;
   strong{color: $themeColor;}
 }
-#qrcode{position: absolute;z-index: 1001;top:2em;right: 14em;display: none;}
+#qr{position: relative;}
+#qrcode{position: absolute;z-index: 1001;top:2em;left: -1em;}
 #report {
   .title {
     font-size: 1.2em;

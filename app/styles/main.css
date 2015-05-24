@@ -6719,12 +6719,14 @@ input[type="radio"] {
   .auto_onmouseout strong {
     color: #b5874e; }
 
+#qr {
+  position: relative; }
+
 #qrcode {
   position: absolute;
   z-index: 1001;
   top: 2em;
-  right: 14em;
-  display: none; }
+  left: -1em; }
 
 #report .title {
   font-size: 1.2em;
