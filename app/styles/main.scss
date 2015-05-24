@@ -886,6 +886,7 @@ input[type="radio"] {
     border-bottom: 4px solid $lightblack;
     padding-bottom: 0.3em;
     display: inline-block;
+    i{font-size: 0.5em;color: $lightblack; border-bottom: none;}
   }
   .ana{
     border-bottom: 1px solid $lightmoreGray;font-size: 1.2em;color: $lightblack;margin-top: 0.5em;
@@ -902,14 +903,19 @@ input[type="radio"] {
     border-right: 1px solid $lightmoreGray;
   }
   .borderSR {
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       border-right: 1px solid $lightmoreGray;
+    }
+  }
+  .borderXB{
+    @media (max-width: 767px) {
+      border-bottom: 1px solid $lightmoreGray;
     }
   }
   .borderT{border-top: 1px solid $lightmoreGray}
   .borderL{border-left: 1px solid $lightmoreGray}
   .borderB{border-bottom: 1px solid $lightmoreGray}
-  .row {
+  >.row {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -919,6 +925,10 @@ input[type="radio"] {
   }
   .row > .col-xs-12, .col-sm-6 {
     padding: 1em;
+  }
+  .ana-title{
+    vertical-align: middle;
+    .ana-ret{color: $themeColor;font-size: 2em;display: inline-block;}
   }
 }
   .cart{width: 60%;margin: 0 auto;}
