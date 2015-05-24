@@ -5870,6 +5870,12 @@ i, span {
   top: 28%;
   left: 30%; }
 
+.circleText1 {
+  position: absolute;
+  z-index: 10;
+  top: 28%;
+  left: 44%; }
+
 .olList {
   list-style: inside; }
   .olList li {
@@ -5927,6 +5933,10 @@ input[type="radio"] {
 .Iconbrowser {
   font-size: 1em;
   color: #535454; }
+
+.Iconbrowser1 {
+  font-size: 12px;
+  color: #b5874e; }
 
 .shareIcon {
   font-size: 1.2em;
@@ -6707,6 +6717,8 @@ input[type="radio"] {
   margin-top: 0.5em; }
   #report .ana:not(:first-of-type) {
     padding: 0.5em 0; }
+#report .ana span {
+  font-size: 14px; }
 #report .det-text {
   font-size: 1.2em;
   color: #535454;
@@ -6716,6 +6728,9 @@ input[type="radio"] {
 @media (min-width: 768px) {
   #report .borderSR {
     border-right: 1px solid #C7C7C7; } }
+@media (min-width: 768px) {
+  #report .borderSL {
+    border-left: 1px solid #C7C7C7; } }
 @media (max-width: 767px) {
   #report .borderXB {
     border-bottom: 1px solid #C7C7C7; } }
