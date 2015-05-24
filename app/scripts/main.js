@@ -30,15 +30,27 @@ $(window).resize(function(){
 $('#SecondNav a').click(function(){
   $('navbar-collapse').removeClass('in');
 });
-console.log($('#myTab li:hidden').html());
+$('#myTab li').each(function (i){
+  //dom方法
+  var node = $(this);
+  //alert(this.value);
+  if( $(this).is(':visible')){
+    console.log( $(this).html());
+  }
+
+});
+console.log($('#myTab li').last().is(':hidden'));
+
 $('#moreNav').on({
   click:function(){
     $('#hidden-more-nav').toggle();
   }
 });
+$('#hidden-more-nav a').click(function(){
+  $('#hidden-more-nav').hide();
+});
 
 $('#qrcode').hover(function(){
   $('#qrcode :target').toggle();
 });
-console.log($('#myTab li:hidden').html());
 

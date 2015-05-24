@@ -5454,9 +5454,6 @@ i, span {
   margin-bottom: 0;
   padding: 1em 0; }
 
-.btn {
-  height: 40px; }
-
 .form-control {
   border-radius: 0;
   height: 40px;
@@ -5668,6 +5665,21 @@ i, span {
   .productBox .price {
     color: #E62129;
     font-size: 1.2em; }
+  .productBox .productCont h4 {
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis;
+    /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/ }
+  .productBox .productCont p {
+    height: 3em;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .fileBox {
   border: 1px solid #b5874e;
@@ -5743,6 +5755,11 @@ i, span {
     background-color: #b5874e;
     color: #fff; }
 
+.lr-app {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 1em; }
+
 .secondNavphone .table > tbody > tr > td {
   padding: 0; }
 .secondNavphone .brand-img {
@@ -5753,22 +5770,33 @@ i, span {
 .SecondNav {
   border-top: 4px solid #b5874e; }
   .SecondNav #myTab {
-    font-size: 1.2em;
-    height: 2.28em;
+    font-size: 16px;
+    line-height: 16px;
+    height: 41px;
     display: inline-block;
     float: left;
-    word-wrap: break-word;
-    overflow: hidden; }
+    width: 100%;
+    max-width: 100%;
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: clip;
+    /* 当对象内文本溢出时内容剪切；需与overflow:hidden;一起使用。*/ }
     .SecondNav #myTab li {
       display: inline-block;
       float: left; }
       .SecondNav #myTab li:not(:first-of-type) {
         margin-left: 1em; }
+      .SecondNav #myTab li:first-child a {
+        padding: 12px 30px; }
     .SecondNav #myTab li.active a {
       color: #fff;
       background-color: #b5874e; }
     .SecondNav #myTab li > a {
-      padding: 0.5em 1em;
+      padding: 12px 20px;
       vertical-align: bottom;
       position: relative;
       bottom: 0;
@@ -5778,6 +5806,9 @@ i, span {
       border-bottom: 1px solid #b5874e;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px; }
+      .SecondNav #myTab li > a:hover, .SecondNav #myTab li > a:focus {
+        background-color: #b5874e;
+        color: #fff; }
   .SecondNav .table > tbody > tr > td {
     padding: 0; }
   .SecondNav .companyName {
