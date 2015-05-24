@@ -5675,11 +5675,15 @@ i, span {
     text-overflow: ellipsis;
     /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/ }
   .productBox .productCont p {
+    position: relative;
     height: 3em;
-    line-height: 1.5em;
+    width: 100%;
     word-wrap: break-word;
+    line-height: 1.5em;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis;
+    /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/ }
 
 .fileBox {
   border: 1px solid #b5874e;
