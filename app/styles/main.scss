@@ -105,7 +105,6 @@ i,span{font-style: normal}
 .cont{background-color: $white;padding: 1em;}
 .navbar{border: none;margin-bottom: 0;padding:1em 0;
 }
-.btn{height: 40px;}
 .form-control{border-radius: 0;height: 40px;font-size: 1.2em;}
 .btn-SearchBlue{color: $white;background-color: $themeColor;height: 50px;padding-left:2em;padding-right:2em;
   @media (max-width:767px){
@@ -252,6 +251,23 @@ i,span{font-style: normal}
   border: 1px solid $lightmoreGray;padding: 1em;
   .productImg{padding: 1em;}
   .price{color: $red;font-size: 1.2em;}
+  .productCont{
+    h4{
+      word-break:keep-all;/* 不换行 */
+      white-space:nowrap;/* 不换行 */
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    }
+    p{
+      position: relative;
+      height: 3em;
+      width: 100%;
+      word-wrap: break-word;
+      line-height:1.5em;
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    }
+  }
 }
 //文件盒子
 .fileBox{
@@ -298,6 +314,11 @@ i,span{font-style: normal}
     color: $white;
   }
 }
+.lr-app{
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 1em;
+}
 .secondNavphone{
   .table > tbody > tr > td{padding: 0;}
   .brand-img{width: 20%;}
@@ -305,18 +326,25 @@ i,span{font-style: normal}
 }
 .SecondNav{border-top: 4px solid $themeColor;
 
-    #myTab{font-size: 1.2em;height: 2.28em;display: inline-block;
+    #myTab{font-size: 16px;line-height:16px;height: 41px;display: inline-block;
       float: left;
-      word-wrap:break-word;
-      overflow:hidden;
+      width: 100%;
+      max-width: 100%;
+      word-break:keep-all;/* 不换行 */
+      white-space:nowrap;/* 不换行 */
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:clip;/* 当对象内文本溢出时内容剪切；需与overflow:hidden;一起使用。*/
       li{display: inline-block;
         float: left;
         &:not(:first-of-type){
           margin-left: 1em;
         }
+        &:first-child{
+          a{padding: 12px 30px;}
+        }
       }
       li.active{a{color: $white;background-color: $themeColor;}}
-      li>a{padding: 0.5em 1em;vertical-align: bottom;
+      li>a{padding:12px 20px;vertical-align: bottom;
         position: relative;bottom:0;
         color: $themeColor;
         border-left: 1px solid $themeColor;
@@ -324,6 +352,7 @@ i,span{font-style: normal}
         border-bottom: 1px solid $themeColor;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
+        &:hover,&:focus{background-color: $themeColor;color: $white;}
       }
     }
   .table > tbody > tr > td{padding: 0;}
