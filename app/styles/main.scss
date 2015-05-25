@@ -495,6 +495,50 @@ input[type="radio"] {
 .carousel-control img{ position: absolute; top: 45%; left:40%;}
 .carousel-indicators .active{ background-color: #b5874e; border: none;}
 .carousel-indicators li {  border: 1px solid #b5874e;}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  text-indent: 0;
+  border: 1px solid $lightmoreGray;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color:$lightmoreGray;
+  line-height: 1em;}
+  .carousel-indicators .active {
+   margin: 0;
+   width: 15px;
+   height: 15px;
+    background-color:#b5874e;
+ }
+.carousel-indicators-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center; }
+.carousel-indicators-down li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #B5874E;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: transparent; }
+.carousel-indicators-down .active {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff; }
 .btn-primary { background-color: #b5874e;}
 .btn-primary:hover {background-color: #b5874e;}
 
