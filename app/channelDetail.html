@@ -31,16 +31,30 @@
     <div class="container">
       <div class="row">
         <div class="container">
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <span>欢迎您来诚盾!</span>
             <a href="">请登录</a>
             ｜
             <a href="">免费注册</a>
           </div>
-          <div class="col-xs-6 text-right">
+          <div class="col-xs-8 text-right">
             <a href="">手机App</a>
             ｜
+            <a id="qr" href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/qrcode.png"></a>
+            ｜
             <a href="">加入收藏</a>
+            ｜
+            <a id="ind" href="#ind-classify" data-toggle="collapse">行业分类
+              <div id="ind-classify" class="clearfix collapse">
+                <a class="active"  href="#">不限</a>
+                <a href="#">医疗/医院</a>
+                <a href="#">美容/保健</a>
+                <a href="#">母婴/家政</a>
+                <a href="#">司法/律师</a>
+                <a href="#">出国/旅行</a>
+              </div>
+            </a>
+
             ｜
             <a href="">商务服务</a>
           </div>
@@ -59,20 +73,9 @@
         <div class="col-sm-7 ">
           <form  role="search">
             <div class="input-group searchBox">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-SearchBlue dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                  行业分类
-                  <span class="caret"></span>
-                  <span class="sr-only">切换下拉菜单</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">功能</a></li>
-                  <li><a href="#">另一个功能</a></li>
-                  <li><a href="#">其他</a></li>
-                </ul>
-              </div><!-- /btn-group -->
-              <input type="text" class="form-control btn-search" placeholder="Search for...">
-                        <span class="input-group-btn">
+              <input type="text" class="form-control btn-search" placeholder="Search for..." id="o" onkeyup="autoComplete.start(event)">
+              <div class="auto_hidden" id="auto"><!--自动完成 DIV--></div>
+                      <span class="input-group-btn">
                            <button class="btn btn-SearchBlue" type="button">搜索</button>
                         </span>
             </div>
@@ -80,58 +83,63 @@
         </div>
         <div class="col-sm-3 hidden-xs">
           <a class="openFileBtn" href="">
-            <img src="images/public/openFiles.gif"> &nbsp;&nbsp;我要开通档案
+            <img src="images/public/openFiles.gif">我要开通档案
           </a>
         </div>
       </div>
     </div>
   </nav>
-  <nav class="navbar navbar-default visible-xs">
+  <nav class="navbar secondNavphone navbar-default visible-xs">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/logo.png" alt=""/></a>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/logo.png" style="height: 60px;" alt=""/></a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-left mt1em" role="search">
-          <div class="input-group searchBox">
-            <div class="input-group-btn">
-              <button type="button" class="btn btn-SearchBlue dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                行业分类
-                <span class="caret"></span>
-                <span class="sr-only">切换下拉菜单</span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">功能</a></li>
-                <li><a href="#">另一个功能</a></li>
-                <li><a href="#">其他</a></li>
-              </ul>
-            </div><!-- /btn-group -->
-            <input type="text" class="form-control btn-search" placeholder="Search for...">
-                        <span class="input-group-btn">
-                           <button class="btn btn-SearchBlue" type="button">搜索</button>
-               </span>
-          </div>
-        </form>
-        <div class="head-top2 mt1em clearfix">
-          <div class="col-xs-6">
-            <a href="">登录</a>
-            ｜
-            <a href="">注册</a>
-          </div>
-          <div class="col-xs-6 text-right">
-            <a  href="">
-              <img src="images/public/openFiles.gif"> &nbsp;&nbsp;我要开通档案
-            </a>
-          </div>
-        </div>
-      </div><!-- /.navbar-collapse -->
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <table class="table table-bordered">
+        <tbody>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="lr-app" href="#">登录</a>
+            <a class="lr-app" href="#">注册</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink"  href=""><img src="images/public/openFiles.gif" alt=""/>我要开通档案</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">手机App</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">保障计划</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">行业分类</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">商户服务</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">参加保障</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">首页</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- /.navbar-collapse -->
   </nav>
 </div>
 <div class="content">
@@ -186,7 +194,9 @@
             <div class="fileText">
               <p>登陆耐克中国官网,你无论是日常穿搭,还是 外出运动,都能畅享轻盈舒适体验。全新TECH P ACK系列,带体验。</p>
             </div>
-            <img class="bao" src="images/public/bao.png" alt="保"/>
+            <a href="#">
+              <img class="bao" src="images/public/bao.png" alt="保"/>
+            </a>
           </div>
         </div>
       </div>
@@ -216,7 +226,9 @@
             <div class="fileText">
               <p>登陆耐克中国官网,选购春季新款,尽在NIKE.C OM。全新dsag电视剧啊国家控股的就撒开顾客来说dasgdgadsagddfasdjfklasjfdajfslkjdfjkadsjfkajlksdjflasjflsadjflas的KOBE X混合缓震设计、先进抓地力 系统和无缝鞋面融为一体,助你驾驭着瞬杀极速 。全新FLYKNIT系列,让你无论是日常穿搭,还是 外出运动,都能畅享轻盈舒适体验。全新TECH P ACK系列,带给你轻盈透气的舒适体验。</p>
             </div>
-            <img class="bao" src="images/public/bao.png" alt="保"/>
+            <a href="#">
+              <img class="bao" src="images/public/bao.png" alt="保"/>
+            </a>
           </div>
         </div>
       </div>
@@ -246,7 +258,9 @@
             <div class="fileText">
               <p>登陆耐克中国官网,选购春季新款,尽在NIKE.C OM。全新dsag电视剧啊国家控股的就撒开顾客来说dasgdgadsagddfasdjfklasjfdajfslkjdfjkadsjfkajlksdjflasjflsadjflas的KOBE X混合缓震设计、先进抓地力 系统和无缝鞋面融为一体,助你驾驭着瞬杀极速 。全新FLYKNIT系列,让你无论是日常穿搭,还是 外出运动,都能畅享轻盈舒适体验。全新TECH P ACK系列,带给你轻盈透气的舒适体验。</p>
             </div>
-            <img class="bao" src="images/public/bao.png" alt="保"/>
+            <a href="#">
+              <img class="bao" src="images/public/bao.png" alt="保"/>
+            </a>
           </div>
         </div>
       </div>
@@ -255,9 +269,6 @@
       <div class="col-xs-12">
         <div class="load-container load">
           <div class="loader">Loading...</div>
-        </div>
-        <div class="loadend">
-          <img src="img/public/end.png"/>
         </div>
       </div>
     </div>
@@ -274,6 +285,45 @@
         </ul>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <table class="table table-bordered bot-box3">
+            <tbody>
+            <tr>
+              <td>
+                <a href="">
+                  <img class="img-responsive" src="images/public/21.png" alt=""/>
+                </a>
+              </td>
+              <td>
+                <a href="">
+                  <img class="img-responsive" src="images/public/22.png" alt=""/>
+                </a>
+              </td>
+              <td>
+                <a href="">
+                  <img class="img-responsive" src="images/public/23.png" alt=""/>
+                </a>
+              </td>
+              <td>
+                <a href="">
+                  <img class="img-responsive" src="images/public/24.png" alt=""/>
+                </a>
+              </td>
+              <td>
+                <a href="">
+                  <img class="img-responsive" src="images/public/25.png" alt=""/>
+                </a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
     <div class="bot-box2 text-center">
       <p class="colorlightBlack">Copyright © 2000-2015 DXY All Rights Reserved.
       <p class="colorlightBlack">浙B2-20070219(含BBS) (浙)-经营性-2012-0008 浙卫网审[2014] 40号</p>
@@ -281,6 +331,7 @@
     </div>
   </div>
 </div>
+
 <div id="top" >
 </div>
 <!-- build:js(.) scripts/vendor.js -->
