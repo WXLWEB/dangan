@@ -115,6 +115,7 @@ i,span{font-style: normal}
 .openFileBtn{height:50px;padding:0.5em 1em; text-align:center;color:$themeColor;border: 1px solid $themeColor;display: block;
     &:hover{color: $white;border: 1px solid $blue;background-color: $blue;}
   border-radius: 4px;
+  img{padding-right: 1em;}
 }
 .form-group{margin-bottom: 0;}
 //改变间距
@@ -205,7 +206,9 @@ i,span{font-style: normal}
       &:hover{color: $themeColor;}}
   }}
 .bot-box1{border-top: 1px solid $lightmoreGray; border-bottom: 1px solid $lightmoreGray;}
-.bot-box2{padding: 2em;font-size: 0.8em
+.bot-box2{padding: 2em;font-size: 0.8em}
+.bot-box3{margin-top: 1em;
+  td{width: 20%;}
 }
 //页数
 .pagination{margin: 0;float: right;
@@ -297,7 +300,7 @@ i,span{font-style: normal}
   .ChinaName{font-size: 1.6em;font-weight:500;color: $deepblack;}
   .EnglishName{font-size: 1.2em;color: $lightblack;}
 }
-#hidden-more-nav{position:absolute;display: none;padding-right: 15px;
+#hidden-more-nav{position:absolute;display: none;
   tr>td{padding: 0;}
   z-index: 1000;background-color: $white;
 }
@@ -313,6 +316,7 @@ i,span{font-style: normal}
     background-color: $themeColor;
     color: $white;
   }
+  img{padding-right: 1em;}
 }
 .lr-app{
   display: inline-block;
@@ -956,6 +960,14 @@ input[type="radio"] {
 }
 #qr{position: relative;}
 #qrcode{position: absolute;z-index: 1001;top:2em;left: -1em;}
+#ind{position:  relative;}
+#ind-classify{position: absolute;z-index: 1001;top:2em;right: 4em;
+  a{color: $lightblack;&:hover{color: $themeColor;}padding-right: 1em;display: inline-block; float: left;}
+  .active{color: $themeColor;}
+  width: 20em;background-color: $white;padding: 1em;border: 1px solid $lightmoreGray;
+  box-shadow:5px 5px 5px  #D0CCC9;
+  -moz-box-shadow: 5px 5px 5px #D0CCC9;
+}
 #report {
   .title {
     font-size: 1.2em;
@@ -1021,6 +1033,11 @@ input[type="radio"] {
     color: $themeColor;border: 1px solid $themeColor;
     line-height: 1.2em;border-radius: 3em;
     width: 3.2em;
+    &:hover{color: $white;background-color: $themeColor;}
   }
 .bdshare-button-style0-32{a{background: none}}
+<<<<<<< HEAD
+.list-unstyled{a{color: $lightblack;&:hover{color: $themeColor}}}
+=======
 .col-xs-12 i{color:$themeColor}
+>>>>>>> origin/master

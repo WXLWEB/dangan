@@ -39,11 +39,21 @@
                   <div class="col-xs-8 text-right">
                     <a href="">手机App</a>
                     ｜
-                    <a href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/qrcode.png"></a>
+                    <a id="qr" href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/qrcode.png"></a>
                     ｜
                     <a href="">加入收藏</a>
                     ｜
-                    <a href="">行业分类</a>
+                    <a id="ind" href="#ind-classify" data-toggle="collapse">行业分类
+                      <div id="ind-classify" class="clearfix collapse">
+                        <a class="active"  href="#">不限</a>
+                        <a href="#">医疗/医院</a>
+                        <a href="#">美容/保健</a>
+                        <a href="#">母婴/家政</a>
+                        <a href="#">司法/律师</a>
+                        <a href="#">出国/旅行</a>
+                      </div>
+                    </a>
+
                     ｜
                     <a href="">商务服务</a>
                   </div>
@@ -72,47 +82,64 @@
                 </div>
               <div class="col-sm-3 hidden-xs">
                 <a class="openFileBtn" href="">
-                  <img src="images/public/openFiles.gif"> &nbsp;&nbsp;我要开通档案
+                  <img src="images/public/openFiles.gif">我要开通档案
                 </a>
               </div>
             </div>
         </div>
     </nav>
-  <nav class="navbar navbar-default visible-xs">
+  <nav class="navbar secondNavphone navbar-default visible-xs">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/logo.png" alt=""/></a>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/logo.png" style="height: 60px;" alt=""/></a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-left mt1em" role="search">
-          <div class="input-group searchBox">
-            <input type="text" class="form-control btn-search" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-SearchBlue" type="button">搜索</button>
-              </span>
-          </div>
-        </form>
-        <div class="head-top2 mt1em clearfix">
-          <div class="col-xs-6">
-            <a href="">登录</a>
-            ｜
-            <a href="">注册</a>
-          </div>
-          <div class="col-xs-6 text-right">
-            <a  href="">
-              <img src="images/public/openFiles.gif"> &nbsp;&nbsp;我要开通档案
-            </a>
-          </div>
-        </div>
-      </div><!-- /.navbar-collapse -->
     </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <table class="table table-bordered">
+        <tbody>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="lr-app" href="#">登录</a>
+            <a class="lr-app" href="#">注册</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink"  href=""><img src="images/public/openFiles.gif" alt=""/>我要开通档案</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">手机App</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">保障计划</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">行业分类</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">商户服务</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">参加保障</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">首页</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- /.navbar-collapse -->
+  </nav>
 </div>
 <div class="content">
   <div class="searchWord">
@@ -357,6 +384,35 @@
                 </ul>
             </div>
         </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <table class="table table-bordered bot-box3">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="images/public/21.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/22.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/23.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/24.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/25.png" alt=""/>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
         <div class="bot-box2 text-center">
             <p class="colorlightBlack">Copyright © 2000-2015 DXY All Rights Reserved.
             <p class="colorlightBlack">浙B2-20070219(含BBS) (浙)-经营性-2012-0008 浙卫网审[2014] 40号</p>
