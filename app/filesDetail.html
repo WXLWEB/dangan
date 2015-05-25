@@ -41,13 +41,21 @@
           <div class="col-xs-8 text-right">
             <a href="">手机App</a>
             ｜
-            <a href="#qrcode" data-toggle="collapse">微信公众号</a>
-            <img class="collapse" id="qrcode" src="images/public/qrcode.png">
+            <a id="qr" href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/qrcode.png"></a>
             ｜
             <a href="">加入收藏</a>
             ｜
-            <a href="#ind-classify">行业分类</a>
-            <div id="ind-classify"></div>
+            <a id="ind" href="#ind-classify" data-toggle="collapse">行业分类
+              <div id="ind-classify" class="clearfix collapse">
+                <a class="active"  href="#">不限</a>
+                <a href="#">医疗/医院</a>
+                <a href="#">美容/保健</a>
+                <a href="#">母婴/家政</a>
+                <a href="#">司法/律师</a>
+                <a href="#">出国/旅行</a>
+              </div>
+            </a>
+
             ｜
             <a href="">商务服务</a>
           </div>
@@ -117,7 +125,7 @@
   <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-12 mt1em mb1em">
-        <a href="#filesDetail" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
+        <a href="#report" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
           <img src="images/public/logo2.png" alt=""  style="width: 50px;"/>
             <span class="company-info">
               <span class="ChinaName">阿里巴巴</span>
@@ -211,247 +219,6 @@
     </div>
   <!-- 选项卡面板 -->
       <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade" id="filesDetail">
-          <div class="row">
-            <div class="col-md-9 col-sm-8 mt1em">
-              <div class="banner">
-                <img class="img-responsive" src="images/public/banner.png" alt=""/>
-                <div class="banner-bottom clearfix">
-                  <div class="col-sm-4">
-                    <div class="target">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="vote">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="comment">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">官方动态</span>
-                <span class="more"><a href="#">更多</a></span>
-              </div>
-              <ul class="articleList mt1em clearfix">
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">产品服务</span>
-                <span class="more"><a href="">更多</a></span>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em clearfix">
-                        <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em  clearfix">
-                        <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em  clearfix">                         <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">最新评论</span>
-              </div>
-              <div class="commentBox mt1em">
-                <div class="row">
-                  <div class="col-xs-12 mt1em">
-                    <ul class="comt-cont">
-                      <li>
-                        <div class="row pt1em pb1em">
-                          <div class="col-sm-2 col-xs-3">
-                            <img class="img-responsive" src="images/public/user1.png"  alt="用户头像"/>
-                            <img class="comtIcon" src="images/public/good.png" alt="赞"/>
-                          </div>
-                          <div class="col-sm-10 col-xs-9">
-                            <h4><a href="">黑夜小喵</a></h4>
-                            <p>看相 很迷信啊 我觉得只有闲的没事的人才会研 究这个 长得什么样受之父母 长得不好 就不是好 人了? 很奇怪看长相就能知道一个人的心理? 那你 就是神了 呵呵呵呵呵呵呵</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row pt1em pb1em">
-                          <div class="col-sm-2 col-xs-3">
-                            <img class="img-responsive" src="images/public/user1.png"  alt="用户头像"/>
-                            <img class="comtIcon" src="images/public/bad.png" alt="赞"/>
-                          </div>
-                          <div class="col-sm-10 col-xs-9">
-                            <h4><a href="">黑夜小喵</a></h4>
-                            <p>看相 很迷信啊 我觉得只有闲的没事的人才会研 究这个 长得什么样受之父母 长得不好 就不是好 人了? 很奇怪看长相就能知道一个人的心理? 那你 就是神了 呵呵呵呵呵呵呵</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-4 mt1em">
-              <h3>阿里巴巴</h3>
-              <p>
-                阿里巴巴集团由本为英语教师的中国互联网 先锋马云于1999年带领其他17人在杭州创 立,他希望将互联网发展成为普及使用、 安全可靠的工具,让大众受惠。阿里巴巴 集团经营多元化的互联网业务,致力为全 球所有人创造便捷的交易渠道。阿里巴巴 集团由私人持股,现在大中华地区、新加 坡、印度、英国及美国设有70多个办事处, 共有20,400多名员工。自成立以来,阿里 巴巴集团建立了领先的消费者电子商务、 网上支付、B2B网上交易市场及云计算业 务,近几年更积极开拓无线应用、手机操 作系统和互联网电视等领域。
-              </p>
-              <h3><i class="iconfont IconPhone">&#xe601;</i>&nbsp;&nbsp;010-88888888 </h3>
-              <h3><i class="iconfont Iconbrowser">&#xe602;</i>&nbsp;&nbsp;<a href="http://ykd.chengdun.com">ykd.chengdun.com</a></h3>
-              <div class="share mt1em">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <div class="bdsharebuttonbox" data-tag="share_1">
-                      <a class="bds_more" data-cmd="more"><i class="iconfont shareIcon">&#xe604;</i>&nbsp;&nbsp;分享档案</a>
-                    </div>
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="collectFile"><i class="iconfont collectIcon">&#xe605;</i>&nbsp;&nbsp;收藏档案</div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">认证档案</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">参加保障</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">参加记录</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">访问我的淘宝</button>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">舆情</span>
-                <span class="more"><a href="">更多</a></span>
-              </div>
-              <ol class="olList">
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
         <!--报告内容-->
         <div class="tab-pane fade in active" id="report">
           <div class="row mt1em borderT">
@@ -734,26 +501,24 @@
               <div class="title">优惠信息</div>
               <div class="clearfix"></div>
               <ul class="mt1em list-unstyled">
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
               </ul>
             </div>
             <div class="col-sm-6 borderSL">
               <div class="title floatLeft">官方动态</div>
               <div class="clearfix"></div>
               <ul class="mt1em list-unstyled">
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
               </ul>
             </div>
           </div>
@@ -1870,36 +1635,8 @@
 <script src="scripts/backTop.js"></script>
 <script src="scripts/Chart.js"></script>
 <script>
-  // Basic FitVids Test
-
   $(".container").fitVids();
-  // Custom selector and No-Double-Wrapping Prevention Test
-  $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
 </script>
-<script>
-  $(function(){
-    var index = 0;
-    $('.btn_r').click(function(){
-      index++;
-      $('.Pop_up_box ul li').eq(index-1).animate({'margin-left':'-50%'},1000).siblings().css('margin-left',0).hide();
-      $('.Pop_up_box ul li').eq(index).show();
-      if(index == 3){
-        index = -1;
-      }
-    });
-
-    $('.list dl dt img').click(function(){
-      $('.bj').height($(document).height())
-      $('.Pop_up_box').show();
-      $('.bj').show();
-    })
-    $('.bj,.close-2').click(function(){
-      $('.Pop_up_box').hide();
-      $('.bj').hide();
-    })
-  })
-</script>
-
 <script>
   window.onload = function() {
     var ctx = document.getElementById("canvas").getContext("2d");
@@ -1920,9 +1657,7 @@
     window.myLine = new Chart(ctx).Line(lineChartData2, {
       responsive: true
     });
-
-
-  }
+  };
   var lineChartData = {
     labels : ["6月","7月","8月","9月","总量"],
     datasets : [

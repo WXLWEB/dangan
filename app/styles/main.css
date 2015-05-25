@@ -5490,6 +5490,8 @@ i, span {
     color: #fff;
     border: 1px solid #025499;
     background-color: #025499; }
+  .openFileBtn img {
+    padding-right: 1em; }
 
 .form-group {
   margin-bottom: 0; }
@@ -5579,6 +5581,11 @@ i, span {
 .bot-box2 {
   padding: 2em;
   font-size: 0.8em; }
+
+.bot-box3 {
+  margin-top: 1em; }
+  .bot-box3 td {
+    width: 20%; }
 
 .pagination {
   margin: 0;
@@ -5742,7 +5749,6 @@ i, span {
 #hidden-more-nav {
   position: absolute;
   display: none;
-  padding-right: 15px;
   z-index: 1000;
   background-color: #fff; }
   #hidden-more-nav tr > td {
@@ -5758,6 +5764,8 @@ i, span {
   .secondNavphoneLink:hover, .secondNavphoneLink:focus {
     background-color: #b5874e;
     color: #fff; }
+  .secondNavphoneLink img {
+    padding-right: 1em; }
 
 .lr-app {
   display: inline-block;
@@ -6738,6 +6746,30 @@ input[type="radio"] {
   top: 2em;
   left: -1em; }
 
+#ind {
+  position: relative; }
+
+#ind-classify {
+  position: absolute;
+  z-index: 1001;
+  top: 2em;
+  right: 4em;
+  width: 20em;
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #C7C7C7;
+  box-shadow: 5px 5px 5px  #D0CCC9;
+  -moz-box-shadow: 5px 5px 5px #D0CCC9; }
+  #ind-classify a {
+    color: #535454;
+    padding-right: 1em;
+    display: inline-block;
+    float: left; }
+    #ind-classify a:hover {
+      color: #b5874e; }
+  #ind-classify .active {
+    color: #b5874e; }
+
 #report .title {
   font-size: 1.2em;
   border-bottom: 4px solid #535454;
@@ -6807,6 +6839,14 @@ input[type="radio"] {
   line-height: 1.2em;
   border-radius: 3em;
   width: 3.2em; }
+  .baoIcon:hover {
+    color: #fff;
+    background-color: #b5874e; }
 
 .bdshare-button-style0-32 a {
   background: none; }
+
+.list-unstyled a, .list-inline a {
+  color: #535454; }
+  .list-unstyled a:hover, .list-inline a:hover {
+    color: #b5874e; }

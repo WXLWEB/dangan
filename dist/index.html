@@ -10,13 +10,12 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/693469fa.main.css">
+    <link rel="stylesheet" href="styles/0c819e24.main.css">
     <script src="scripts/vendor/27cd1e69.modernizr.js"></script>
     <!--[if lt IE 9]>
     <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
     <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
 <div class="header">
@@ -24,19 +23,23 @@
         <div class="container">
             <div class="row">
                 <div class="container">
-                    <div class="col-xs-6">
-                        <span>欢迎您来诚盾!</span>
-                        <a href="">请登录</a>
-                        ｜
-                        <a href="">免费注册</a>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <a href="">手机App</a>
-                        ｜
-                        <a href="">加入收藏</a>
-                        ｜
-                        <a href="">商务服务</a>
-                    </div>
+                  <div class="col-xs-4">
+                    <span>欢迎您来诚盾!</span>
+                    <a href="">请登录</a>
+                    ｜
+                    <a href="">免费注册</a>
+                  </div>
+                  <div class="col-xs-8 text-right">
+                    <a href="">手机App</a>
+                    ｜
+                    <a id="qr" href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/cf3e42d8.qrcode.png"></a>
+                    ｜
+                    <a href="">加入收藏</a>
+                    ｜
+                    <a href="">行业分类</a>
+                    ｜
+                    <a href="">商务服务</a>
+                  </div>
                 </div>
             </div>
         </div>
@@ -46,26 +49,15 @@
             <div class="row hidden-xs">
                 <div class="col-sm-2">
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/4caee5f1.logo.png" alt=""/></a>
+                    <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/a2f46cb8.logo.png" alt=""/></a>
                   </div>
                 </div>
                 <div class="col-sm-7 ">
                   <form  role="search">
                     <div class="input-group searchBox">
-                      <div class="input-group-btn">
-                        <button type="button" class="btn btn-SearchBlue dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                          行业分类
-                          <span class="caret"></span>
-                          <span class="sr-only">切换下拉菜单</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">功能</a></li>
-                          <li><a href="#">另一个功能</a></li>
-                          <li><a href="#">其他</a></li>
-                        </ul>
-                      </div><!-- /btn-group -->
-                      <input type="text" class="form-control btn-search" placeholder="Search for...">
-                        <span class="input-group-btn">
+                      <input type="text" class="form-control btn-search" placeholder="Search for..." id="o" onkeyup="autoComplete.start(event)">
+                      <div class="auto_hidden" id="auto"><!--自动完成 DIV--></div>
+                      <span class="input-group-btn">
                            <button class="btn btn-SearchBlue" type="button">搜索</button>
                         </span>
                     </div>
@@ -73,59 +65,64 @@
                 </div>
               <div class="col-sm-3 hidden-xs">
                 <a class="openFileBtn" href="">
-                  <img src="images/public/5122bc87.openFiles.gif"> &nbsp;&nbsp;我要开通档案
+                  <img src="images/public/5122bc87.openFiles.gif">我要开通档案
                 </a>
               </div>
             </div>
         </div>
     </nav>
-  <nav class="navbar navbar-default visible-xs">
+  <nav class="navbar secondNavphone navbar-default visible-xs">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/4caee5f1.logo.png" alt=""/></a>
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/public/a2f46cb8.logo.png" style="height: 60px;" alt=""/></a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-left mt1em" role="search">
-          <div class="input-group searchBox">
-            <div class="input-group-btn">
-              <button type="button" class="btn btn-SearchBlue dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                行业分类
-                <span class="caret"></span>
-                <span class="sr-only">切换下拉菜单</span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">功能</a></li>
-                <li><a href="#">另一个功能</a></li>
-                <li><a href="#">其他</a></li>
-              </ul>
-            </div><!-- /btn-group -->
-            <input type="text" class="form-control btn-search" placeholder="Search for...">
-                        <span class="input-group-btn">
-                           <button class="btn btn-SearchBlue" type="button">搜索</button>
-               </span>
-          </div>
-        </form>
-        <div class="head-top2 mt1em clearfix">
-          <div class="col-xs-6">
-            <a href="">登录</a>
-            ｜
-            <a href="">注册</a>
-          </div>
-          <div class="col-xs-6 text-right">
-            <a  href="">
-              <img src="images/public/5122bc87.openFiles.gif"> &nbsp;&nbsp;我要开通档案
-            </a>
-          </div>
-        </div>
-      </div><!-- /.navbar-collapse -->
     </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <table class="table table-bordered">
+        <tbody>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="lr-app" href="#">登录</a>
+            <a class="lr-app" href="#">注册</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink"  href=""><img src="images/public/5122bc87.openFiles.gif" alt=""/>我要开通档案</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">手机App</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">保障计划</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">行业分类</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">商户服务</a>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">参加保障</a>
+          </td>
+          <td class="col-xs-6 text-center">
+            <a class="secondNavphoneLink" href="#" role="tab" data-toggle="pill">首页</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- /.navbar-collapse -->
+  </nav>
 </div>
 <div class="content">
   <div class="searchWord">
@@ -183,7 +180,6 @@
               <img class="bao" src="images/public/24aa3b98.bao.png" alt="保"/>
             </div>
           </div>
-
         </a>
       </div>
       <div class="col-md-4 col-sm-6">
@@ -359,8 +355,6 @@
       </div>
     </div>
   </div>
-
-
 </div>
 <div class="footer bgcolorWhite mt2em clearfix">
     <div class="bottom-box">
@@ -388,6 +382,7 @@
 <script src="scripts/jquery.circliful.js"></script>
 <script src="scripts/backTop.js"></script>
 <script src="scripts/popover.js"></script>
-
+<script src="scripts/autocomplete.js"></script>
+<script src="scripts/d41d8cd9.main.js"></script>
 </body>
 </html>
