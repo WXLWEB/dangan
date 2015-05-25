@@ -3210,8 +3210,7 @@ tbody.collapse.in {
   .nav:after {
     clear: both; }
   .nav > li {
-    position: relative;
-    display: block; }
+    position: relative; }
     .nav > li > a {
       position: relative;
       display: block;
@@ -6744,7 +6743,9 @@ input[type="radio"] {
   position: absolute;
   z-index: 1001;
   top: 2em;
-  left: -1em; }
+  left: -1em;
+  box-shadow: 5px 5px 5px  #D0CCC9;
+  -moz-box-shadow: 5px 5px 5px #D0CCC9; }
 
 #ind {
   position: relative; }
@@ -6850,3 +6851,14 @@ input[type="radio"] {
   color: #535454; }
   .list-unstyled a:hover, .list-inline a:hover {
     color: #b5874e; }
+
+.nav-stacked {
+  list-style: circle; }
+  .nav-stacked > li {
+    list-style: inside; }
+    .nav-stacked > li.active {
+      color: #b5874e; }
+      .nav-stacked > li.active a {
+        color: #b5874e; }
+    .nav-stacked > li > a {
+      color: #535454; }

@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="images/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <link rel="stylesheet" href="styles/0c819e24.main.css">
+  <link rel="stylesheet" href="styles/a6749cec.main.css">
   <script src="scripts/vendor/27cd1e69.modernizr.js"></script>
   <!--[if lt IE 9]>
   <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
@@ -18,7 +18,7 @@
   <![endif]-->
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy">
 <div class="bj"></div>
 <div class="header">
   <div class="head-top hidden-xs">
@@ -34,12 +34,21 @@
           <div class="col-xs-8 text-right">
             <a href="">手机App</a>
             ｜
-            <a href="#qrcode" data-toggle="collapse">微信公众号<img class="collapse" id="qrcode" src="images/public/cf3e42d8.qrcode.png"></a>
+            <a id="qr" href="#qrcode" data-toggle="collapse">微信公众号<img id="qrcode" class="collapse" src="images/public/cf3e42d8.qrcode.png"></a>
             ｜
             <a href="">加入收藏</a>
             ｜
-            <a href="#ind-classify">行业分类</a>
-            <div id="ind-classify"></div>
+            <a id="ind" href="#ind-classify" data-toggle="collapse">行业分类
+              <div id="ind-classify" class="clearfix collapse">
+                <a class="active"  href="#">不限</a>
+                <a href="#">医疗/医院</a>
+                <a href="#">美容/保健</a>
+                <a href="#">母婴/家政</a>
+                <a href="#">司法/律师</a>
+                <a href="#">出国/旅行</a>
+              </div>
+            </a>
+
             ｜
             <a href="">商务服务</a>
           </div>
@@ -109,7 +118,7 @@
   <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-12 mt1em mb1em">
-        <a href="#filesDetail" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
+        <a href="#report" class="filesDetail clearfix floatLeft" role="tab" data-toggle="pill">
           <img src="images/public/cca4ef42.logo2.png" alt=""  style="width: 50px;"/>
             <span class="company-info">
               <span class="ChinaName">阿里巴巴</span>
@@ -203,249 +212,8 @@
     </div>
   <!-- 选项卡面板 -->
       <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade" id="filesDetail">
-          <div class="row">
-            <div class="col-md-9 col-sm-8 mt1em">
-              <div class="banner">
-                <img class="img-responsive" src="images/public/5e42e50d.banner.png" alt=""/>
-                <div class="banner-bottom clearfix">
-                  <div class="col-sm-4">
-                    <div class="target">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="vote">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="comment">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <h4>指数指标</h4>
-                          <p>诚盾系统全网
-                            收录综合测评</p>
-                        </div>
-                        <div class="col-xs-6 mt1em">
-                          <div  class="circle">
-                            A
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">官方动态</span>
-                <span class="more"><a href="#">更多</a></span>
-              </div>
-              <ul class="articleList mt1em clearfix">
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/2a653255.govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/2a653255.govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <a href="#">
-                      <div class="col-xs-3 col-sm-2">
-                        <img class="img-responsive" src="images/public/2a653255.govermentImg.png" alt="文章"/>
-                      </div>
-                      <div class="col-xs-9 col-sm-10">
-                        <a href="#governmentDetail" role="tab" data-toggle="pill"><h4>TKA 膝外翻畸形的处理技术要点和难点</h4></a>
-                        <p class="hidden-xs">本视频首先介绍了膝关节外翻畸形Krackow分型,对于严重的外翻,表面膝关节一般也没有问题,对于极...</p>
-                      </div>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">产品服务</span>
-                <span class="more"><a href="">更多</a></span>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/4ce3d332.productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em clearfix">
-                        <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/4ce3d332.productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em  clearfix">
-                        <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="productBox mt2em">
-                    <div class="productImg">
-                      <img class="img-responsive" src="images/public/4ce3d332.productSerive.png" alt=""/>
-                    </div>
-                    <div class="productCont">
-                      <h4>
-                        TKA 膝外翻畸形的处理技术要点
-                      </h4>
-                      <p class="fileText">本视频首先介绍了膝关节外翻畸形Kr ackow分型,1型和2型外翻畸形,...</p>
-                      <div class="mt1em  clearfix">                         <span class="price">价格：¥300</span>
-                        <a href="#productDetail" role="tab" data-toggle="pill"  class="btn btn-white floatRight">我要购买</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">最新评论</span>
-              </div>
-              <div class="commentBox mt1em">
-                <div class="row">
-                  <div class="col-xs-12 mt1em">
-                    <ul class="comt-cont">
-                      <li>
-                        <div class="row pt1em pb1em">
-                          <div class="col-sm-2 col-xs-3">
-                            <img class="img-responsive" src="images/public/b1f35332.user1.png"  alt="用户头像"/>
-                            <img class="comtIcon" src="images/public/b504ca0b.good.png" alt="赞"/>
-                          </div>
-                          <div class="col-sm-10 col-xs-9">
-                            <h4><a href="">黑夜小喵</a></h4>
-                            <p>看相 很迷信啊 我觉得只有闲的没事的人才会研 究这个 长得什么样受之父母 长得不好 就不是好 人了? 很奇怪看长相就能知道一个人的心理? 那你 就是神了 呵呵呵呵呵呵呵</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="row pt1em pb1em">
-                          <div class="col-sm-2 col-xs-3">
-                            <img class="img-responsive" src="images/public/b1f35332.user1.png"  alt="用户头像"/>
-                            <img class="comtIcon" src="images/public/9932b802.bad.png" alt="赞"/>
-                          </div>
-                          <div class="col-sm-10 col-xs-9">
-                            <h4><a href="">黑夜小喵</a></h4>
-                            <p>看相 很迷信啊 我觉得只有闲的没事的人才会研 究这个 长得什么样受之父母 长得不好 就不是好 人了? 很奇怪看长相就能知道一个人的心理? 那你 就是神了 呵呵呵呵呵呵呵</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-4 mt1em">
-              <h3>阿里巴巴</h3>
-              <p>
-                阿里巴巴集团由本为英语教师的中国互联网 先锋马云于1999年带领其他17人在杭州创 立,他希望将互联网发展成为普及使用、 安全可靠的工具,让大众受惠。阿里巴巴 集团经营多元化的互联网业务,致力为全 球所有人创造便捷的交易渠道。阿里巴巴 集团由私人持股,现在大中华地区、新加 坡、印度、英国及美国设有70多个办事处, 共有20,400多名员工。自成立以来,阿里 巴巴集团建立了领先的消费者电子商务、 网上支付、B2B网上交易市场及云计算业 务,近几年更积极开拓无线应用、手机操 作系统和互联网电视等领域。
-              </p>
-              <h3><i class="iconfont IconPhone">&#xe601;</i>&nbsp;&nbsp;010-88888888 </h3>
-              <h3><i class="iconfont Iconbrowser">&#xe602;</i>&nbsp;&nbsp;<a href="http://ykd.chengdun.com">ykd.chengdun.com</a></h3>
-              <div class="share mt1em">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <div class="bdsharebuttonbox" data-tag="share_1">
-                      <a class="bds_more" data-cmd="more"><i class="iconfont shareIcon">&#xe604;</i>&nbsp;&nbsp;分享档案</a>
-                    </div>
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="collectFile"><i class="iconfont collectIcon">&#xe605;</i>&nbsp;&nbsp;收藏档案</div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">认证档案</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">参加保障</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">参加记录</button>
-                </div>
-                <div class="col-xs-6 mt1em">
-                  <button class="btn-white100">访问我的淘宝</button>
-                </div>
-              </div>
-              <div class="title mt1em clearfix">
-                <span class="title-intro">舆情</span>
-                <span class="more"><a href="">更多</a></span>
-              </div>
-              <ol class="olList">
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-                <li><a href="">京东方瑞丽医学美容医院:北京东方瑞</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
         <!--报告内容-->
-        <div class="tab-pane fade in active" id="report">
+        <div class="tab-pane fade" id="report">
           <div class="row mt1em borderT">
             <div class="col-xs-12">
               <span class="title">档案全称</span>
@@ -726,26 +494,24 @@
               <div class="title">优惠信息</div>
               <div class="clearfix"></div>
               <ul class="mt1em list-unstyled">
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
               </ul>
             </div>
             <div class="col-sm-6 borderSL">
               <div class="title floatLeft">官方动态</div>
               <div class="clearfix"></div>
               <ul class="mt1em list-unstyled">
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
-                <li>阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
+                <li><a href="">阿里巴巴集团，是一家由中国人创建的国际化的互联网公司</a></li>
               </ul>
             </div>
           </div>
@@ -1641,16 +1407,13 @@
           </div>
         </div>
         <!--聚合内容-->
-        <div class="tab-pane fade" id="together">
+        <div class="tab-pane fade in active" id="together">
           <div class="row">
-            <div class="bottom-left">
               <div class="col-xs-9">
                 <div class="title mt1em clearfix" id="section-1">
                   <span class="title-intro">阿里巴巴集团</span>
                 </div>
-                <p style="margin-top:1em">里巴巴集团经营多元化的互联网业务,致力为全球所有人创造便捷的交易渠道。自成立以来,阿里巴巴集团建立了领先的消费者电子商务、网上支付、 B2B网上交易市场及云计算业务,近几年更积极开拓无线应用、手机操作系统和互联网电视等领域。集团以促进一个开放、协同、繁荣的电子商务生态 系统为目标,旨在对消费者、商家以及经济发展做出贡献。
-                </p>
-
+                <p style="margin-top:1em">里巴巴集团经营多元化的互联网业务,致力为全球所有人创造便捷的交易渠道。自成立以来,阿里巴巴集团建立了领先的消费者电子商务、网上支付、 B2B网上交易市场及云计算业务,近几年更积极开拓无线应用、手机操作系统和互联网电视等领域。集团以促进一个开放、协同、繁荣的电子商务生态 系统为目标,旨在对消费者、商家以及经济发展做出贡献。</p>
                 <div class="title mt1em clearfix" id="section-2">
                   <span class="title-intro">集团概况</span>
                 </div>
@@ -1668,12 +1431,9 @@
                 </div>
                 <p style="margin-top:1em">马云 阿里巴巴集团执行主席 马云为阿里巴巴集团的主要创始人,自1999年集团成立以来一直担任主席兼首席执行官,负责集团的整体策略及方针。201 3年5月10日,马云辞任首席执行官,但保留执行主席一职,专注于制定集团的策略方针及培养企业人才。 马云现担任日本软体银行公司的董事,该公司 为领先的数码信息公司,于东京证券交易所挂牌交易。他亦为华谊兄弟传媒股份有限公司的董事,该公司在深圳证券交易所上市。马云于2009年成为美 国大自然保护协会(TNC)的中国项目托管人,于2010年加入该组织的全球董事会,并于2013年5月11日起担任中国TNC理事会主席。马云于2013年9月 出任生命科学突破奖基金会董事。马云毕业于杭州师范学院外语系。 蔡崇信 阿里巴巴集团执行副主席蔡崇信自2013年5月10日起,担任阿里巴巴集团执 行副主席,负责集团战略投资,同时跟团队其他成员共同负责与财务机构等重要外部组织的沟通和联系工作。 蔡崇信是阿里巴巴集团创始人之一,自集 团成立以来一直担任首席财务官一职,同时为阿里巴巴集团董事会成员。在过去十余年,蔡崇信与他的团队领导了阿里巴巴集团历史上数次具标志性的 交易,包括于2012年帮助集团回购雅虎持有的股份并重组与雅虎的关系。 1995至1999年,蔡崇信于香港担任瑞典瓦伦堡家族的主要投资公司──Inves torAB的副总裁兼资深投资经理,专责亚洲私募基金方面的投资。在此之前,蔡崇信为纽约管理层收购公司Rosecliff,Inc.的副总裁兼法律顾问。 蔡崇信 拥有美国纽约州律师资格,曾于1990至1993年担任当地的国际律师事务所Sullivan&Cromwell的税务组合伙人。 蔡崇信拥有耶鲁大学经济学及东亚研 究文学学士学位以及耶鲁法学院法学博士学位。 陆兆禧 阿里巴巴集团首席执行官 陆兆禧于2000年加入阿里巴巴集团,于2013年5月10日接替马云,出 任阿里巴巴集团首席执行官。 2000年至2004年,陆兆禧曾担任阿里巴巴多个领导职位,并负责管理华南销售大区。2004年9月,陆兆禧带领团队创建支 付宝,并任支付宝总裁。他于2008年1月转往淘宝网,2010年1月出任淘宝网首席执行官。在他任职期间,淘宝网的交易额增加了八倍。 2011年2月陆兆 禧出任阿里巴巴首席执行官,负责带领当时上市的B2B公司持续升级业务模式,提升用户体验。
                 </p>
-
               </div>
-            </div>
-            <div class="row">
               <div class="col-xs-3" id="myScrollspy">
-                <ul class="nav nav-stacked" data-spy="affix" -offset-top="125">
+                <ul class="nav nav-stacked" data-spy="affix" -offset-top="120">
                   <li class="active"><a href="#section-1">阿里巴巴</a></li>
                   <li><a href="#section-2">集团概况</a></li>
                   <li><a href="#section-3">发展过程</a></li>
@@ -1681,7 +1441,6 @@
                   <li><a href="#section-5">领导简介</a></li>
                 </ul>
               </div>
-            </div>
           </div>
         </div>
         <!--图库内容-->
@@ -1844,36 +1603,8 @@
 <script src="scripts/backTop.js"></script>
 <script src="scripts/Chart.js"></script>
 <script>
-  // Basic FitVids Test
-
   $(".container").fitVids();
-  // Custom selector and No-Double-Wrapping Prevention Test
-  $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
 </script>
-<script>
-  $(function(){
-    var index = 0;
-    $('.btn_r').click(function(){
-      index++;
-      $('.Pop_up_box ul li').eq(index-1).animate({'margin-left':'-50%'},1000).siblings().css('margin-left',0).hide();
-      $('.Pop_up_box ul li').eq(index).show();
-      if(index == 3){
-        index = -1;
-      }
-    });
-
-    $('.list dl dt img').click(function(){
-      $('.bj').height($(document).height())
-      $('.Pop_up_box').show();
-      $('.bj').show();
-    })
-    $('.bj,.close-2').click(function(){
-      $('.Pop_up_box').hide();
-      $('.bj').hide();
-    })
-  })
-</script>
-
 <script>
   window.onload = function() {
     var ctx = document.getElementById("canvas").getContext("2d");
@@ -1894,9 +1625,7 @@
     window.myLine = new Chart(ctx).Line(lineChartData2, {
       responsive: true
     });
-
-
-  }
+  };
   var lineChartData = {
     labels : ["6月","7月","8月","9月","总量"],
     datasets : [

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/0c819e24.main.css">
+    <link rel="stylesheet" href="styles/a6749cec.main.css">
     <script src="scripts/vendor/27cd1e69.modernizr.js"></script>
     <!--[if lt IE 9]>
     <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
@@ -36,7 +36,17 @@
                     ｜
                     <a href="">加入收藏</a>
                     ｜
-                    <a href="">行业分类</a>
+                    <a id="ind" href="#ind-classify" data-toggle="collapse">行业分类
+                      <div id="ind-classify" class="clearfix collapse">
+                        <a class="active"  href="#">不限</a>
+                        <a href="#">医疗/医院</a>
+                        <a href="#">美容/保健</a>
+                        <a href="#">母婴/家政</a>
+                        <a href="#">司法/律师</a>
+                        <a href="#">出国/旅行</a>
+                      </div>
+                    </a>
+
                     ｜
                     <a href="">商务服务</a>
                   </div>
@@ -367,6 +377,35 @@
                 </ul>
             </div>
         </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <table class="table table-bordered bot-box3">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="images/public/3dd0eb8a.21.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/674bc832.22.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/fb18bfff.23.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/684bfdc1.24.png" alt=""/>
+                    </td>
+                    <td>
+                      <img class="img-responsive" src="images/public/eb886598.25.png" alt=""/>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
         <div class="bot-box2 text-center">
             <p class="colorlightBlack">Copyright © 2000-2015 DXY All Rights Reserved.
             <p class="colorlightBlack">浙B2-20070219(含BBS) (浙)-经营性-2012-0008 浙卫网审[2014] 40号</p>
@@ -384,5 +423,14 @@
 <script src="scripts/popover.js"></script>
 <script src="scripts/autocomplete.js"></script>
 <script src="scripts/d41d8cd9.main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myNav").affix({
+      offset: {
+        top: 125
+      }
+    });
+  });
+</script>
 </body>
 </html>
